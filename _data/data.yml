@@ -3,263 +3,234 @@
 #
 
 sidebar:
-    position: right # position of the sidebar : left or right
-    about: True # set to False or comment line if you want to remove the "how to use?" in the sidebar
+    position: left # position of the sidebar : left or right
+    about: False # set to False or comment line if you want to remove the "how to use?" in the sidebar
     education: True # set to False if you want education in main section instead of in sidebar
 
     # Profile information
-    name: Alan Doe
-    tagline: Full Stack Developer
+    name: Luca Giuliani
+    tagline: Data & Computer Scientist
     avatar: profile.png  #place a 100x100 picture inside /assets/images/ folder and provide the name of the file below
 
     # Sidebar links
-    email: hello@webjeda.com
-    phone: 012 345 6789
-    timezone: America/Cancun Timezone
-    citizenship:
-    website: blog.webjeda.com #do not add http://
-    linkedin: alandoe
-    xing: alandoe
-    github: sharu725
-    telegram: # add your nickname without '@' sign
-    gitlab:
-    bitbucket:
-    twitter: '@webjeda'
-    stack-overflow: # Number/Username, e.g. 123456/alandoe
-    codewars:
-    goodreads: # Number-Username, e.g. 123456-alandoe
-    pdf: http://www.africau.edu/images/default/sample.pdf
+    email: luca.giuliani.11@gmail.com
+    phone: (+39) 338 2037596
+    timezone: CET (UTC+1)
+    # citizenship:
+    # website: giuluck.github.io #do not add http://
+    linkedin: luca-giuliani11
+    # xing: 
+    github: giuluck
+    # telegram: # add your nickname without '@' sign
+    # gitlab:
+    # bitbucket:
+    # twitter: 
+    # stack-overflow: # Number/Username, e.g. 123456/alandoe
+    # codewars:
+    # goodreads: # Number-Username, e.g. 123456-alandoe
+    pdf: https://drive.google.com/file/d/1Lva8XMyPRnIsBI32MrH9EsilVGdniP1_/view
 
     languages:
       title: Languages
       info:
-        - idiom: English
+        - idiom: Italian
           level: Native
 
-        - idiom: French
-          level: Professional
-
-        - idiom: Spanish
-          level: Professional
+        - idiom: English
+          level: C1 Level
 
     interests:
       title: Interests
       info:
-        - item: Climbing
+        - item: <u>Music Production</u>
+          link: https://linktr.ee/divinae.miranda
+
+        - item: Concerts
           link:
 
-        - item: Snowboarding
-          link:
-
-        - item: Cooking
+        - item: Movies
           link:
 
 career-profile:
-    title: Career Profile
+    title: About Me
     summary: |
-      Summarise your career here lorem ipsum dolor sit amet, consectetuer
-      adipiscing elit. You can [download this free resume/CV template here]().
-      Aenean commodo ligula eget dolor aenean massa. Cum sociis natoque
-      penatibus et magnis dis parturient montes, nascetur ridiculus mus.
-      Donec quam felis, ultricies nec, pellentesque eu.
-      Second paragraph if required.
+      I am a PhD student in Computer Science & Engineering at the **University of Bologna**.
+      
+      My main focus is on **Integrated Methodologies for Optimization, Constraint Reasoning, and Machine Learning**,
+      but I have been exploring as well other AI domains such as Fairness and Creativity.
+      
+      In my free time, I also play in an electropop duo.
+      We are called **Divinae Miranda** and you can listen to our songs [<u>here</u>](https://open.spotify.com/intl-it/artist/2wvpQCjOmseuzCLC9orKpn?si=px_O1STORbipCWJEeLZpXQ).
+
 education:
     title: Education
     info:
-      - degree: MSc in Computer Science
-        university: University of London
-        time: 2011 - 2012
+      - degree: PhD in Computer Science
+        university: University of Bologna
+        time: 11/2021 - Ongoing
         details: |
-          Describe your study here lorem ipsum dolor sit amet, consectetuer
-          adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum
-          sociis natoque penatibus et magnis dis parturient montes, nascetur
-          ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu,
-          pretium quis, sem.
-            - Bullet point
-            - Bullet point
-      - degree: BSc in Applied Mathematics
-        university: Bristol University
-        time: 2007 - 2011
+            Research Project: <u>Integrated Methodologies for Optimization, Constraint Reasoning, and Machine Learning</u>
+
+      - degree: MSc in Artificial Intelligence
+        university: University of Bologna
+        time: 09/2019 - 07/2021
         details: |
-          Describe your study here lorem ipsum dolor sit amet, consectetuer
-          adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum
-          sociis natoque penatibus et magnis dis parturient montes, nascetur
-          ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu,
-          pretium quis, sem.
-            - Bullet point
-            - Bullet point
+            Thesis: [<u>Extending the Moving Targets Method for Injecting Constraints in Machine Learning</u>](https://amslaurea.unibo.it/23885/)
+      
+      - degree: BSc in Computer Science
+        university: University of Bologna
+        time: 09/2016 - 10/2019
+        details: |
+          Thesis: [<u>Design and Implementation of a Domain-Specific Language for the Definition of Gene Regulatory Networks</u>](https://amslaurea.unibo.it/19071/)
+          
+      - degree: High School (100/100)
+        university: Liceo Scientifico L. Da Vinci, Jesi (AN)
+        time: 09/2011 - 07/2016
 
 experiences:
-    title: Experiences
+    title: Work Experiences
     info:
-      - role: Lead Developer
-        time: 2015 - Present
-        company: Startup Hubs, San Francisco
+      - role: Academic Internship
+        time: 02/2019 - 05/2019
+        company: University of Bologna
         details: |
-          Describe your role here lorem ipsum dolor sit amet, consectetuer
-          adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
-          Cum sociis natoque penatibus et magnis dis parturient montes,
-          nascetur ridiculus mus. Donec quam felis, ultricies nec,
-          pellentesque eu, pretium quis, sem. Nulla consequat massa quis
-          enim. Donec pede justo. Sed ut perspiciatis unde omnis iste natus
-          error sit voluptatem accusantium doloremque laudantium, totam rem
-          aperiam, eaque ipsa quae ab illo inventore veritatis et quasi
-          architecto beatae vitae dicta sunt explicabo.
-            - Bullet point
-            - Bullet point
-      - role: Senior Software Engineer
-        time: 2014 - 2015
-        company: Google, London
+          - Development and test of a multi-agent simulation engine
+          - Employment of the engine to simulate biochemical experiments
+      
+      - role: Professional Stage
+        time: 06/2015 - 07/2015
+        company: Loccioni Group, Angeli di Rosora (AN)
         details: |
-          Describe your role here lorem ipsum dolor sit amet, consectetuer
-          adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
-          Cum sociis natoque penatibus et magnis dis parturient montes,
-          nascetur ridiculus mus. Donec quam felis, ultricies nec,
-          pellentesque eu, pretium quis, sem.
-            - Bullet point
-            - Bullet point
-      - role: UI Developer
-        time: 2012 - 2014
-        company: Amazon, London
-        details: |
-          Describe your role here lorem ipsum dolor sit amet, consectetuer
-          adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
-          Cum sociis natoque penatibus et magnis dis parturient montes,
-          nascetur ridiculus mus. Donec quam felis, ultricies nec,
-          pellentesque eu, pretium quis, sem.
-            - Bullet point
-            - Bullet point
+            - Development of a web application with AngularJS
 
-certifications:
-      title: Certifications
-      list:
-        - name: CV Builder
-          start: 2020
-          end: 2021
-          organization: Microsoft
-          credentialid: 111-222
-          credentialurl: www.google.com
-          credentialname: Google
-          details: |
-            Details about cert. Lorem ipsum dolor sit amet, consectetur
-            adipiscing elit.
-            Nullam eget orci purus. Nullam ultrices neque nibh.
-            Aenean fermentum, felis vulputate suscipit accumsan,
-            sem enim bibendum augue, sed convallis arcu lacus at dui.
-            Pellentesque et nibh suscipit, vestibulum turpis eu, semper tortor.
-            Praesent felis nibh, eleifend id eleifend id, dictum id enim.
-            Praesent venenatis erat non augue suscipit consectetur.
-
-            Second paragraph. Sed eleifend enim ante, vitae efficitur purus
-            fringilla vel. Ut euismod, sem sed vulputate venenatis,
-            justo diam viverra velit, sed rhoncus leo leo eu justo.
-            Suspendisse placerat risus ante, sed porta nisi blandit at.
-        - name: Git learning
-          start: 2019
-          end:
-          organization: Microsoft
-          credentialid: 111-222
-          credentialurl: www.github.com
-          credentialname: Github
-          details: |
-            Older certification. Lorem ipsum dolor sit amet, consectetur
-            adipiscing elit.
-            Nullam eget orci purus. Nullam ultrices neque nibh.
-            Aenean fermentum, felis vulputate suscipit accumsan,
-            sem enim bibendum augue, sed convallis arcu lacus at dui.
-            Pellentesque et nibh suscipit, vestibulum turpis eu, semper tortor.
-            Praesent felis nibh, eleifend id eleifend id, dictum id enim.
-            Praesent venenatis erat non augue suscipit consectetur.
+# certifications:
+#       title: Certifications
+#       list:
+#         - name: CV Builder
+#           start: 2020
+#           end: 2021
+#           organization: Microsoft
+#           credentialid: 111-222
+#           credentialurl: www.google.com
+#           credentialname: Google
+#           details: |
+#             Details about cert.
 
 projects:
-    title: Projects
-    intro: >
-      You can list your side projects in this
-      section. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-      Vestibulum et ligula in nunc bibendum fringilla a eu lectus.
+    title: Open Source Projects
+#     intro: >
+#       You can list your side projects in this section
     assignments:
-      - title: Velocity
-        link: "#hook"
-        tagline: "A responsive website template designed to help startups promote, market and sell their products."
+      - title: <u>Moving Targets</u>
+        link: https://github.com/moving-targets/moving-targets
+        tagline: "A Library for Constrained Machine Learning based on Bi-level Decomposition"
 
-      - title: DevStudio
-        link: "#"
-        tagline: "A responsive website template designed to help web developers/designers market their services."
+      - title: <u>Another Genetic Circuit Transcriber</u>
+        link: https://github.com/AGCT-DSL/AGCT
+        tagline: "A Domain-Specific Language for the Definition of Gene Regulatory Networks"
 
-      - title: Tempo
-        link: "#"
-        tagline: "A responsive website template designed to help startups promote their products or services and to attract users &amp; investors"
+      - title: <u>Interactive Benchmark Library</u>
+        link: https://github.com/giuluck/benchmark-library
+        tagline: "A Library to define and use Common Benchmarks for Sequential Decision-Making and other Computational Tasks."
 
-      - title: Atom
-        link: "#"
-        tagline: "A comprehensive website template solution for startups/developers to market their mobile apps."
+      - title: <u>Causalgen</u>
+        link: https://github.com/giuluck/causalgen
+        tagline: "A Causal-based Utility for Data Generation"
 
-      - title: Delta
-        link: "#"
-        tagline: "A responsive Bootstrap one page theme designed to help app developers promote their mobile apps"
+      - title: <u>Powerplantsim</u>
+        link: https://github.com/giuluck/powerplantsim
+        tagline: "A Graph-based Simulator for Power Plants"
+      
+      - title: <u>Epidemic Model Learning</u>
+        link: https://github.com/mazzio97/EpidemicModelLearning
+        tagline: "An Analysis of Covid Data using Machine Learning and Mathematical Programming"
 
-oss:
-    title: OSS Contributions
-    intro: >
-      You can list your open source software contributions in this
-      section. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-      Vestibulum et ligula in nunc bibendum fringilla a eu lectus.
-    contributions:
-      - title: Tempo
-        link: "#"
-        tagline: "A responsive website template designed to help startups promote their products or services and to attract users &amp; investors"
+      - title: <u>Deep Comedy</u>
+        link: https://github.com/mazzio97/DeepComedy
+        tagline: "A Transformer-based Neural Architecture aimed at reproducing the Style of the Divine Comedy"
 
-      - title: Atom
-        link: "#"
-        tagline: "A comprehensive website template solution for startups/developers to market their mobile apps."
+      - title: <u>Gangster SQuAD</u>
+        link: https://github.com/giuluck/Gangster-SQuAD
+        tagline: "A NLP system for Question Answering Tasks"
 
-      - title: Delta
-        link: "#"
-        tagline: "A responsive Bootstrap one page theme designed to help app developers promote their mobile apps"
+      - title: <u>IoTrace</u>
+        link: https://github.com/mazzio97/IoTrace
+        tagline: "Prototype of a Contact Tracing app built with IOTA"
+      
+      - title: <u>Paku Paku</u>
+        link: https://github.com/giuluck/PakuPaku
+        tagline: "A One-Vs-One Pacman developed in C++ using OpenGL Primitives"
+
+      - title: <u>Snailysis</u>
+        link: https://github.com/mazzio97/Snailysis
+        tagline: "A Level-based Platform Fame with a Weird Focus on Calculus"
+
+      - title: <u>Powerplantsim</u>
+        link: https://github.com/mazzio97/AlmaFood
+        tagline: "Prototype of a JustEat clone for the new Alma Mater University Campus of Cesena"
+
+# oss:
+#     title: OSS Contributions
+#     intro: >
+#       You can list your open source software contributions in this section
+#     contributions:
+#       - title: Tempo
+#         link: "#"
+#         tagline: "A responsive website template designed to help startups promote their products or services and to attract users &amp; investors"
 
 publications:
     title: Publications
-    intro: |
-      You can list your publications in this section. Lorem ipsum dolor sit
-      amet, consectetur adipiscing elit. Vestibulum et ligula in nunc
-      bibendum fringilla a eu lectus.
+#     intro: |
+#       You can list your publications in this section.
     papers:
-      - title: The Art of Computer Programming
-        link: "#"
-        authors: Donald E. Knuth
-        conference: Addison-Wesley, 1968
+      - title: "<u>Generalized Disparate Impact for Configurable Fairness Solutions in ML</u>"
+        link: https://proceedings.mlr.press/v202/giuliani23a.html
+        authors: <u>L. Giuliani</u>, E. Misino, M. Lombardi
+        conference: ICML, 2023
 
-      - title: "Genetic Programming III: Darwinian Invention &amp; Problem Solving"
-        link: "#"
-        authors: Koza, J.R., Andre, D., Bennett, F.H., Keane, M.A.
-        conference: "Morgan Kaufmann Publishers Inc., San Francisco, CA, USA, 1st edn. (1999)"
+      - title: "<u>Towards Symbiotic Creativity: A Methodological Approach to Compare Human and AI Robotic Dance Creations</u>"
+        link: https://www.ijcai.org/proceedings/2023/644
+        authors: A. De Filippo, <u>L. Giuliani</u>, E. Mancini, A. Borghesi, P. Mello, M. Milano
+        conference: IJCAI, 2023
 
-      - title: A syntax directed compiler for Algol 60
-        link: "#"
-        authors: Edgar T. Irons
-        conference: "Comm. ACM 4 (1961), 51–55"
+      - title: "<u>MusiComb: a Sample-based Approach to Music Generation Through Constraints</u>"
+        link: https://www.computer.org/csdl/proceedings-article/ictai/2023/427300a194/1T3dgtsCtcQ
+        authors: <u>L. Giuliani</u>, F. Ballerini, A. De Filippo, A. Borghesi
+        conference: ICTAI, 2023
+      
+      - title: "<u>Towards Intelligent Music Production: A Sample-based Approach</u>"
+        link: https://ceur-ws.org/Vol-3519/paper5.pdf
+        authors: <u>L. Giuliani</u>, A. De Filippo, A. Borghesi
+        conference: CREAI @ AIxIA, 2023
+
+      - title: "<u>A Multi-modal Perspective for the Artistic Evaluation of Robotic Dance Performances</u>"
+        link: https://ceur-ws.org/Vol-3278/short3.pdf
+        authors: <u>L. Giuliani</u>, A. De Filippo, A. Borghesi, P. Mello, M. Milano
+        conference: CREAI @ AIxIA, 2022
+
+      - title: "<u>A Geometric Framework for Fairness</u>"
+        link: https://ceur-ws.org/Vol-3523/paper9.pdf
+        authors: A. Maggio, <u>L. Giuliani</u>, R. Calegari, M. Lombardi, M. Milano
+        conference: AEQUITAS @ ECAI, 2023
 
 skills:
     title: Skills &amp; Proficiency
 
     toolset:
-      - name: Python & Django
-        level: 98%
-
-      - name: Javascript & jQuery
-        level: 98%
-
-      - name: Angular
-        level: 98%
-
-      - name: HTML5 & CSS
+      - name: Machine Learning
         level: 95%
 
-      - name: Ruby on Rails
+      - name: Logistics &amp; Solvers
         level: 85%
 
-      - name: Sketch & Photoshop
-        level: 60%
+      - name: Software Development
+        level: 80%
 
-footer: >
-    Designed with <i class="fas fa-heart"></i> by <a href="http://themes.3rdwavemedia.com" target="_blank" rel="nofollow">Xiaoying Riley</a>
+      - name: Music Composition
+        level: 70%
+
+      - name: Music Production
+        level: 65%
+
+# footer: >
+#    Designed with <i class="fas fa-heart"></i> by <a href="http://themes.3rdwavemedia.com" target="_blank" rel="nofollow">Xiaoying Riley</a>
