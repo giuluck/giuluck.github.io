@@ -28,7 +28,7 @@ sidebar:
     # stack-overflow: # Number/Username, e.g. 123456/alandoe
     # codewars:
     # goodreads: # Number-Username, e.g. 123456-alandoe
-    pdf: https://drive.google.com/file/d/1Lva8XMyPRnIsBI32MrH9EsilVGdniP1_/view
+    pdf: https://drive.google.com/file/d/1VAEPruzEXVnaSBaIorr9JB88oCfkgs6V/view
 
     languages:
       title: Languages
@@ -43,7 +43,7 @@ sidebar:
       title: Interests
       info:
         - item: <u>Music Production</u>
-          link: https://linktr.ee/divinae.miranda
+          link: https://sempreverde.github.com
 
         - item: Concerts
           link:
@@ -54,22 +54,25 @@ sidebar:
 career-profile:
     title: About Me
     summary: |
-      I am a PhD student in Computer Science & Engineering at the **University of Bologna**.
+      I am a **post-doc researcher** at the Department of Computer Science and Engineering (DISI) of the University of Bologna.
       
-      My main focus is on **Integrated Methodologies for Optimization, Constraint Reasoning, and Machine Learning**,
-      but I have been exploring as well other AI domains such as Fairness and Creativity.
+      I mainly work on **Constrained Machine Learning** applied to **Algorithmic Fairness**, with a PhD thesis titled 
+      “[<u>Detection and Enforcement of Non-Linear Correlations for Fair and Robust Machine Learning Applications</u>”](https://github.com/giuluck/non-linear-correlations/blob/main/dissertation.pdf).
       
-      In my free time, I also play in an electropop duo.
-      We are called **Divinae Miranda** and you can listen to our songs [<u>here</u>](https://open.spotify.com/intl-it/artist/2wvpQCjOmseuzCLC9orKpn?si=px_O1STORbipCWJEeLZpXQ).
+      I have also explored other areas of **Artificial Intelligence** such as music generation models and decision-focused learning for combinatorial optimization problems.
+      
+      In my free time, I also like to go to concerts and play music.
+      I played for 7 years in an electropop duo called **Divinae Miranda**, we also published one album and one EP that you can listen [<u>here</u>](https://open.spotify.com/intl-it/artist/2wvpQCjOmseuzCLC9orKpn?si=px_O1STORbipCWJEeLZpXQ).
+      Now I am working on my solo project [**SempreVerde**](https://sempreverde.github.com), where I blend italian singing/songwriting tradition with electronic and techno elements. 
 
 education:
     title: Education
     info:
       - degree: PhD in Computer Science
         university: University of Bologna
-        time: 11/2021 - Ongoing
+        time: 11/2021 - 04/2025
         details: |
-            Research Project: <u>Integrated Methodologies for Optimization, Constraint Reasoning, and Machine Learning</u>
+            Thesis: [<u>Detection and Enforcement of Non-Linear Correlations for Fair and Robust Machine Learning Applications</u>](https://github.com/giuluck/non-linear-correlations/blob/main/dissertation.pdf)
 
       - degree: MSc in Artificial Intelligence
         university: University of Bologna
@@ -121,25 +124,33 @@ projects:
 #     intro: >
 #       You can list your side projects in this section
     assignments:
+      - title: <u>MaxCorr</u>
+        link: https://github.com/giuluck/maxcorr
+        tagline: "A Python Package for Maximal Correlation Indicators"
+    
       - title: <u>Moving Targets</u>
         link: https://github.com/moving-targets/moving-targets
-        tagline: "A Library for Constrained Machine Learning based on Bi-level Decomposition"
+        tagline: "A Python Package for Constrained Machine Learning based on Bi-level Decomposition"
+
+      - title: <u>Causalgen</u>
+        link: https://github.com/giuluck/causalgen
+        tagline: "A Python Package for Causal-based Data Generation"
+
+      - title: <u>Non-Linear Correlations</u>
+        link: https://github.com/giuluck/non-linear-correlations
+        tagline: "Experiments to reproduce the results showed in my PhD Dissertation"
 
       - title: <u>Another Genetic Circuit Transcriber</u>
         link: https://github.com/AGCT-DSL/AGCT
         tagline: "A Domain-Specific Language for the Definition of Gene Regulatory Networks"
 
-      - title: <u>Interactive Benchmark Library</u>
-        link: https://github.com/giuluck/benchmark-library
-        tagline: "A Library to define and use Common Benchmarks for Sequential Decision-Making and other Computational Tasks."
-
-      - title: <u>Causalgen</u>
-        link: https://github.com/giuluck/causalgen
-        tagline: "A Causal-based Utility for Data Generation"
-
       - title: <u>Powerplantsim</u>
         link: https://github.com/giuluck/powerplantsim
         tagline: "A Graph-based Simulator for Power Plants"
+
+      - title: <u>Interactive Benchmark Library</u>
+        link: https://github.com/giuluck/benchmark-library
+        tagline: "A Library to define and use Common Benchmarks for Sequential Decision-Making and other Computational Tasks."
       
       - title: <u>Epidemic Model Learning</u>
         link: https://github.com/mazzio97/EpidemicModelLearning
@@ -186,32 +197,42 @@ publications:
       - title: "<u>Generalized Disparate Impact for Configurable Fairness Solutions in ML</u>"
         link: https://proceedings.mlr.press/v202/giuliani23a.html
         authors: <u>L. Giuliani</u>, E. Misino, M. Lombardi
-        conference: ICML, 2023
+        conference: ICML, 2023 (_Top-Level Conference_ (_A*_)) 
 
       - title: "<u>Towards Symbiotic Creativity: A Methodological Approach to Compare Human and AI Robotic Dance Creations</u>"
         link: https://www.ijcai.org/proceedings/2023/644
         authors: A. De Filippo, <u>L. Giuliani</u>, E. Mancini, A. Borghesi, P. Mello, M. Milano
-        conference: IJCAI, 2023
+        conference: IJCAI, 2023 (_Top-Level Conference_ (_A*_))
 
       - title: "<u>MusiComb: a Sample-based Approach to Music Generation Through Constraints</u>"
         link: https://www.computer.org/csdl/proceedings-article/ictai/2023/427300a194/1T3dgtsCtcQ
         authors: <u>L. Giuliani</u>, F. Ballerini, A. De Filippo, A. Borghesi
-        conference: ICTAI, 2023
-      
-      - title: "<u>Towards Intelligent Music Production: A Sample-based Approach</u>"
-        link: https://ceur-ws.org/Vol-3519/paper5.pdf
-        authors: <u>L. Giuliani</u>, A. De Filippo, A. Borghesi
-        conference: CREAI @ AIxIA, 2023
+        conference: ICTAI, 2023 (_Mid-Level Conference_ (_B_))
 
-      - title: "<u>A Multi-modal Perspective for the Artistic Evaluation of Robotic Dance Performances</u>"
-        link: https://ceur-ws.org/Vol-3278/short3.pdf
-        authors: <u>L. Giuliani</u>, A. De Filippo, A. Borghesi, P. Mello, M. Milano
-        conference: CREAI @ AIxIA, 2022
+      - title: "<u>Long-Term Fairness Strategies in Ranking with Continuous Sensitive Attributes</u>"
+        link: https://ceur-ws.org/Vol-3808/paper11.pdf
+        authors: <u>L. Giuliani</u>, E. Misino, R. Calegari, M. Lombardi
+        conference: AEQUITAS Workshop @ ECAI, 2024 (_High-Level Conference_ (_A_))
+
+      - title: "<u>Expert-MusiComb: Injective Domain Knowledge in a Neuro-Symbolic Approach for Music Generation</u>"
+        link: https://ceur-ws.org/Vol-3810/paper4.pdf
+        authors: L. Tribuiani, <u>L. Giuliani</u>, A. De Filippo, A. Borghesi
+        conference: CREAI Workshop @ ECAI, 2024 (_High-Level Conference_ (_A_))
 
       - title: "<u>A Geometric Framework for Fairness</u>"
         link: https://ceur-ws.org/Vol-3523/paper9.pdf
         authors: A. Maggio, <u>L. Giuliani</u>, R. Calegari, M. Lombardi, M. Milano
-        conference: AEQUITAS @ ECAI, 2023
+        conference: AEQUITAS Workshop @ ECAI, 2023 (_High-Level Conference_ (_A_))
+      
+      - title: "<u>Towards Intelligent Music Production: A Sample-based Approach</u>"
+        link: https://ceur-ws.org/Vol-3519/paper5.pdf
+        authors: <u>L. Giuliani</u>, A. De Filippo, A. Borghesi
+        conference: CREAI Workshop @ AIxIA, 2023 (_Low-Level Conference_ (_C_))
+
+      - title: "<u>A Multi-modal Perspective for the Artistic Evaluation of Robotic Dance Performances</u>"
+        link: https://ceur-ws.org/Vol-3278/short3.pdf
+        authors: <u>L. Giuliani</u>, A. De Filippo, A. Borghesi, P. Mello, M. Milano
+        conference: CREAI Workshop @ AIxIA, 2022 (_Low-Level Conference_ (_C_))
 
 skills:
     title: Skills &amp; Proficiency
