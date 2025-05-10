@@ -57,13 +57,13 @@ career-profile:
       I am a **post-doc researcher** at the Department of Computer Science and Engineering (DISI) of the University of Bologna.
       
       I mainly work on **Constrained Machine Learning** applied to **Algorithmic Fairness**, with a PhD thesis titled 
-      “[<u>Detection and Enforcement of Non-Linear Correlations for Fair and Robust Machine Learning Applications</u>”](https://github.com/giuluck/non-linear-correlations/blob/main/dissertation.pdf).
+      “[<u>Detection and Enforcement of Non-Linear Correlations for Fair and Robust Machine Learning Applications</u>”](https://github.com/giuluck/non-linear-correlations/blob/main/dissertation.pdf){:target="_blank"}.
       
       I have also explored other areas of **Artificial Intelligence** such as music generation models and decision-focused learning for combinatorial optimization problems.
       
       In my free time, I also like to go to concerts and play music.
-      I played for 7 years in an electropop duo called **Divinae Miranda**, we also published one album and one EP that you can listen [<u>here</u>](https://open.spotify.com/intl-it/artist/2wvpQCjOmseuzCLC9orKpn?si=px_O1STORbipCWJEeLZpXQ).
-      Now I am working on my solo project [**SempreVerde**](https://sempreverde.github.com), where I blend italian singing/songwriting tradition with electronic and techno elements. 
+      I played for 7 years in an electropop duo called **Divinae Miranda**, we also published one album and one EP that you can listen [<u>here</u>](https://open.spotify.com/intl-it/artist/2wvpQCjOmseuzCLC9orKpn?si=px_O1STORbipCWJEeLZpXQ){:target="_blank"}.
+      Now I am working on my solo project [**SempreVerde**](https://sempreverde.github.com){:target="_blank"}, where I blend italian singing/songwriting tradition with electronic and techno elements. 
 
 education:
     title: Education
@@ -72,19 +72,19 @@ education:
         university: University of Bologna
         time: 11/2021 - 04/2025
         details: |
-            Thesis: [<u>Detection and Enforcement of Non-Linear Correlations for Fair and Robust Machine Learning Applications</u>](https://github.com/giuluck/non-linear-correlations/blob/main/dissertation.pdf)
+            Thesis: [<u>Detection and Enforcement of Non-Linear Correlations for Fair and Robust Machine Learning Applications</u>](https://github.com/giuluck/non-linear-correlations/blob/main/dissertation.pdf){:target="_blank"}
 
       - degree: MSc in Artificial Intelligence
         university: University of Bologna
         time: 09/2019 - 07/2021
         details: |
-            Thesis: [<u>Extending the Moving Targets Method for Injecting Constraints in Machine Learning</u>](https://amslaurea.unibo.it/23885/)
+            Thesis: [<u>Extending the Moving Targets Method for Injecting Constraints in Machine Learning</u>](https://amslaurea.unibo.it/23885/){:target="_blank"}
       
       - degree: BSc in Computer Science
         university: University of Bologna
         time: 09/2016 - 10/2019
         details: |
-          Thesis: [<u>Design and Implementation of a Domain-Specific Language for the Definition of Gene Regulatory Networks</u>](https://amslaurea.unibo.it/19071/)
+          Thesis: [<u>Design and Implementation of a Domain-Specific Language for the Definition of Gene Regulatory Networks</u>](https://amslaurea.unibo.it/19071/){:target="_blank"}
           
       - degree: High School
         university: Liceo Scientifico L. Da Vinci, Jesi (AN)
@@ -197,42 +197,42 @@ publications:
       - title: "<u>Generalized Disparate Impact for Configurable Fairness Solutions in ML</u>"
         link: https://proceedings.mlr.press/v202/giuliani23a.html
         authors: <u>L. Giuliani</u>, E. Misino, M. Lombardi
-        conference: ICML, 2023 (_Top-Level Conference_ (_A*_)) 
+        conference: ICML, 2023 (*Top-Level Conference* (*A\**))
 
       - title: "<u>Towards Symbiotic Creativity: A Methodological Approach to Compare Human and AI Robotic Dance Creations</u>"
         link: https://www.ijcai.org/proceedings/2023/644
         authors: A. De Filippo, <u>L. Giuliani</u>, E. Mancini, A. Borghesi, P. Mello, M. Milano
-        conference: IJCAI, 2023 (_Top-Level Conference_ (_A*_))
+        conference: IJCAI, 2023 (*Top-Level Conference* (*A\**))
 
       - title: "<u>MusiComb: a Sample-based Approach to Music Generation Through Constraints</u>"
         link: https://www.computer.org/csdl/proceedings-article/ictai/2023/427300a194/1T3dgtsCtcQ
         authors: <u>L. Giuliani</u>, F. Ballerini, A. De Filippo, A. Borghesi
-        conference: ICTAI, 2023 (_Mid-Level Conference_ (_B_))
+        conference: ICTAI, 2023 (*Mid-Level Conference* (*B*))
 
       - title: "<u>Long-Term Fairness Strategies in Ranking with Continuous Sensitive Attributes</u>"
         link: https://ceur-ws.org/Vol-3808/paper11.pdf
         authors: <u>L. Giuliani</u>, E. Misino, R. Calegari, M. Lombardi
-        conference: AEQUITAS Workshop @ ECAI, 2024 (_High-Level Conference_ (_A_))
+        conference: AEQUITAS Workshop @ ECAI, 2024 (*High-Level Conference* (*A*))
 
       - title: "<u>Expert-MusiComb: Injective Domain Knowledge in a Neuro-Symbolic Approach for Music Generation</u>"
         link: https://ceur-ws.org/Vol-3810/paper4.pdf
         authors: L. Tribuiani, <u>L. Giuliani</u>, A. De Filippo, A. Borghesi
-        conference: CREAI Workshop @ ECAI, 2024 (_High-Level Conference_ (_A_))
+        conference: CREAI Workshop @ ECAI, 2024 (*High-Level Conference* (*A*))
 
       - title: "<u>A Geometric Framework for Fairness</u>"
         link: https://ceur-ws.org/Vol-3523/paper9.pdf
         authors: A. Maggio, <u>L. Giuliani</u>, R. Calegari, M. Lombardi, M. Milano
-        conference: AEQUITAS Workshop @ ECAI, 2023 (_High-Level Conference_ (_A_))
+        conference: AEQUITAS Workshop @ ECAI, 2023 (*High-Level Conference* (*A*))
       
       - title: "<u>Towards Intelligent Music Production: A Sample-based Approach</u>"
         link: https://ceur-ws.org/Vol-3519/paper5.pdf
         authors: <u>L. Giuliani</u>, A. De Filippo, A. Borghesi
-        conference: CREAI Workshop @ AIxIA, 2023 (_Low-Level Conference_ (_C_))
+        conference: CREAI Workshop @ AIxIA, 2023 (*Low-Level Conference* (*C*))
 
       - title: "<u>A Multi-modal Perspective for the Artistic Evaluation of Robotic Dance Performances</u>"
         link: https://ceur-ws.org/Vol-3278/short3.pdf
         authors: <u>L. Giuliani</u>, A. De Filippo, A. Borghesi, P. Mello, M. Milano
-        conference: CREAI Workshop @ AIxIA, 2022 (_Low-Level Conference_ (_C_))
+        conference: CREAI Workshop @ AIxIA, 2022 (*Low-Level Conference* (*C*))
 
 skills:
     title: Skills &amp; Proficiency
