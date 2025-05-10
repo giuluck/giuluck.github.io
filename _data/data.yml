@@ -197,42 +197,42 @@ publications:
       - title: "<u>Generalized Disparate Impact for Configurable Fairness Solutions in ML</u>"
         link: https://proceedings.mlr.press/v202/giuliani23a.html
         authors: <u>L. Giuliani</u>, E. Misino, M. Lombardi
-        conference: ICML, 2023 (*Top-Level Conference* (*A\**))
+        conference: ICML, 2023 (Top-Level Conference - A*)
 
       - title: "<u>Towards Symbiotic Creativity: A Methodological Approach to Compare Human and AI Robotic Dance Creations</u>"
         link: https://www.ijcai.org/proceedings/2023/644
         authors: A. De Filippo, <u>L. Giuliani</u>, E. Mancini, A. Borghesi, P. Mello, M. Milano
-        conference: IJCAI, 2023 (*Top-Level Conference* (*A\**))
+        conference: IJCAI, 2023 (Top-Level Conference - A*)
 
       - title: "<u>MusiComb: a Sample-based Approach to Music Generation Through Constraints</u>"
         link: https://www.computer.org/csdl/proceedings-article/ictai/2023/427300a194/1T3dgtsCtcQ
         authors: <u>L. Giuliani</u>, F. Ballerini, A. De Filippo, A. Borghesi
-        conference: ICTAI, 2023 (*Mid-Level Conference* (*B*))
+        conference: ICTAI, 2023 (Mid-Level Conference - B)
 
       - title: "<u>Long-Term Fairness Strategies in Ranking with Continuous Sensitive Attributes</u>"
         link: https://ceur-ws.org/Vol-3808/paper11.pdf
         authors: <u>L. Giuliani</u>, E. Misino, R. Calegari, M. Lombardi
-        conference: AEQUITAS Workshop @ ECAI, 2024 (*High-Level Conference* (*A*))
+        conference: AEQUITAS Workshop @ ECAI, 2024 (High-Level Conference - A)
 
       - title: "<u>Expert-MusiComb: Injective Domain Knowledge in a Neuro-Symbolic Approach for Music Generation</u>"
         link: https://ceur-ws.org/Vol-3810/paper4.pdf
         authors: L. Tribuiani, <u>L. Giuliani</u>, A. De Filippo, A. Borghesi
-        conference: CREAI Workshop @ ECAI, 2024 (*High-Level Conference* (*A*))
+        conference: CREAI Workshop @ ECAI, 2024 (High-Level Conference - A)
 
       - title: "<u>A Geometric Framework for Fairness</u>"
         link: https://ceur-ws.org/Vol-3523/paper9.pdf
         authors: A. Maggio, <u>L. Giuliani</u>, R. Calegari, M. Lombardi, M. Milano
-        conference: AEQUITAS Workshop @ ECAI, 2023 (*High-Level Conference* (*A*))
+        conference: AEQUITAS Workshop @ ECAI, 2023 (High-Level Conference - A)
       
       - title: "<u>Towards Intelligent Music Production: A Sample-based Approach</u>"
         link: https://ceur-ws.org/Vol-3519/paper5.pdf
         authors: <u>L. Giuliani</u>, A. De Filippo, A. Borghesi
-        conference: CREAI Workshop @ AIxIA, 2023 (*Low-Level Conference* (*C*))
+        conference: CREAI Workshop @ AIxIA, 2023 (Low-Level Conference - C)
 
       - title: "<u>A Multi-modal Perspective for the Artistic Evaluation of Robotic Dance Performances</u>"
         link: https://ceur-ws.org/Vol-3278/short3.pdf
         authors: <u>L. Giuliani</u>, A. De Filippo, A. Borghesi, P. Mello, M. Milano
-        conference: CREAI Workshop @ AIxIA, 2022 (*Low-Level Conference* (*C*))
+        conference: CREAI Workshop @ AIxIA, 2022 (Low-Level Conference - C)
 
 skills:
     title: Skills &amp; Proficiency
