@@ -1,0 +1,108 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700");
+/*@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,100..900;1,100..900&display=swap');*/
+
+:root {
+    --dark: #23232A;
+    --dark-text: #080808;
+    --light: #D7D8D6;
+    --light-text: #F8F8F8;
+    --photo-half: 110px;
+}
+
+body {
+    font-size: 16px;
+    color: var(--dark-text);
+    background: var(--light-text);
+
+    a {
+        color: inherit;
+    }
+
+    @media (min-width: 1200px) {
+        margin: min(30px, calc(100vw - 1200px) / 2);
+
+        #curriculum {
+            margin: auto;
+            max-width: 1200px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            -moz-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+    }
+}
+
+header {
+    font-family: "Poppins", sans-serif;
+    background: var(--light);
+
+    #title {
+        #rectangle {
+            color: var(--light-text);
+            background-color: var(--dark);
+            padding: 35px 0 calc(20px + var(--photo-half)) 0;
+            text-align: center;
+            min-height: 130px;
+            width: 100%;
+        }
+
+        img {
+            margin: calc(-1 * var(--photo-half)) 0 0 0;
+            width: calc(2 * var(--photo-half));
+            border: 10px solid white;
+            border-radius: 100%;
+            box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+        }
+    }
+
+    #info {
+        margin: calc(-1 * var(--photo-half) - 15px) 10px 0 10px;
+        padding: 35px 0;
+
+        ul {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+
+            li {
+                margin-top: 15px;
+
+                .bi {
+                    vertical-align: middle;
+                    font-size: 18px;
+                    padding: 0 5px;
+                }
+            }
+        }
+
+    }
+
+    @media (min-width: 768px) {
+        #title {
+            #rectangle {
+                margin: 0 0 0 calc(-1 * var(--photo-half));
+                padding: 0 0 0 calc(var(--photo-half));
+                text-align: left;
+
+                div {
+                    margin-right: 15%;
+                }
+            }
+
+            img {
+                z-index: 1;
+                margin: 15px;
+            }
+        }
+
+        #info {
+            margin-top: -75px;
+            padding: 20px 10px 20px calc(10px + 2 * var(--photo-half));
+        }
+    }
+}
+
+main {
+    font-family: "Open Sans", sans-serif;
+}
