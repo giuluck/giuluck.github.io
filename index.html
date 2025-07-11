@@ -16,63 +16,89 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular-route.min.js"></script>
-    <script src="src/constants.js"></script>
     <script src="src/controller.js"></script>
 </head>
 
 <body ng-app="module" ng-controller="controller">
 <div id="curriculum">
-    <header>
-        <div id="title" class="d-flex flex-column flex-md-row-reverse align-items-center justify-content-center">
-            <div id="rectangle" class="d-flex flex-column align-items-center justify-content-center">
-                <div>
-                    <h1><strong>LUCA GIULIANI, PhD</strong></h1>
-                    <h4>Data & Computer Scientist</h4>
-                </div>
-            </div>
-            <img src="res/profile.jpg" alt="Profile Picture"/>
+    <img id="language" ng-click="languageSwitch()" ng-src="res/{{language}}.png" alt="Language Flag Switch">
+    <header class="d-flex flex-column align-items-center">
+        <div id="title" class="d-flex flex-column justify-content-center">
+            <h1><strong>LUCA GIULIANI, PhD</strong></h1>
+            <h4>Data & Computer Scientist</h4>
         </div>
-        <div id="info" class="d-flex">
-            <ul class="row">
-                <li class="col-12 col-sm-6 col-lg-4 col-xl-3">
-                    <span class="bi bi-gender-male"></span>
-                    {{info.gender}}
-                </li>
-                <li class="col-12 col-sm-6 col-lg-4 col-xl-3 d-flex flex-row flex-sm-row-reverse flex-lg-row">
-                    <span class="bi bi-calendar-event-fill"></span>
-                    {{info.age}}
-                </li>
-                <li class="col-12 col-sm-6 col-lg-4 col-xl-3">
-                    <span class="bi bi-geo-alt-fill"></span>
-                    {{info.location}}
-                </li>
-                <li class="col-12 col-sm-6 col-lg-4 col-xl-3 d-flex flex-row flex-sm-row-reverse flex-lg-row">
-                    <span class="bi bi-envelope-open-fill"></span>
-                    <a href="mailto:giuluck9@gmail.com" target="_blank">giuluck9@gmail.com</a>
-                </li>
-                <li class="col-12 col-sm-6 col-lg-4 col-xl-3">
-                    <span class="bi bi-telephone-fill"></span>
-                    <a href="tel:(+39) 338 2037596" target="_blank">(+39) 338 2037596</a>
-                </li>
-                <li class="col-12 col-sm-6 col-lg-4 col-xl-3 d-flex flex-row flex-sm-row-reverse flex-lg-row">
-                    <span class="bi bi-globe2"></span>
-                    <a href="https://giuluck.github.io/" target="_blank">giuluck.github.io</a>
-                </li>
-                <li class="col-12 col-sm-6 col-lg-4 col-xl-3">
-                    <span class="bi bi-linkedin"></span>
-                    <a href="https://linkedin.com/in/luca-giuliani11" target="_blank">luca-giuliani11</a>
-                </li>
-                <li class="col-12 col-sm-6 col-lg-4 col-xl-3 d-flex flex-row flex-sm-row-reverse flex-lg-row">
-                    <span class="bi bi-github"></span>
-                    <a href="https://github.com/giuluck" target="_blank">giuluck</a>
-                </li>
-            </ul>
+        <img id="photo" src="res/profile.jpg" alt="Profile Picture"/>
+        <div class="d-flex flex-column">
+            <a class="d-block d-sm-none"
+               data-bs-toggle="collapse"
+               href="#info"
+               id="toggler"
+               role="button"
+               aria-controls="info"
+               aria-expanded="false">
+                <span id="open" class="bi bi-plus-lg"></span>
+                <span id="close" class="bi bi-dash-lg"><span>
+            </a>
+            <div id="info" class="collapse d-sm-block">
+                <ul class="row">
+                    <li class="col-12 col-sm-6 col-lg-4 col-xl-3 d-flex flex-row">
+                        <span class="bi bi-gender-male"></span>
+                        <span ng-if="language === 'it'">Lui</span>
+                        <span ng-if="language === 'en'">He/Him</span>
+                    </li>
+                    <li class="col-12 col-sm-6 col-lg-4 col-xl-3 d-flex flex-row flex-sm-row-reverse flex-lg-row">
+                        <span class="bi bi-calendar-event-fill"></span>
+                        <span ng-if="language === 'it'">{{age}} Anni</span>
+                        <span ng-if="language === 'en'">{{age}} Years</span>
+                    </li>
+                    <li class="col-12 col-sm-6 col-lg-4 col-xl-3 d-flex flex-row">
+                        <span class="bi bi-geo-alt-fill"></span>
+                        <span ng-if="language === 'it'">Bologna (BO), 40129</span>
+                        <span ng-if="language === 'en'">Bologna, Italy (IT)</span>
+                    </li>
+                    <li class="col-12 col-sm-6 col-lg-4 col-xl-3 d-flex flex-row flex-sm-row-reverse flex-lg-row">
+                        <span class="bi bi-envelope-open-fill"></span>
+                        <a href="mailto:giuluck9@gmail.com" target="_blank">giuluck9@gmail.com</a>
+                    </li>
+                    <li class="col-12 col-sm-6 col-lg-4 col-xl-3 d-flex flex-row">
+                        <span class="bi bi-telephone-fill"></span>
+                        <a href="tel:(+39) 338 2037596" target="_blank">(+39) 338 2037596</a>
+                    </li>
+                    <li class="col-12 col-sm-6 col-lg-4 col-xl-3 d-flex flex-row flex-sm-row-reverse flex-lg-row">
+                        <span class="bi bi-globe2"></span>
+                        <a href="https://giuluck.github.io/" target="_blank">giuluck.github.io</a>
+                    </li>
+                    <li class="col-12 col-sm-6 col-lg-4 col-xl-3 d-flex flex-row">
+                        <span class="bi bi-linkedin"></span>
+                        <a href="https://linkedin.com/in/luca-giuliani11" target="_blank">luca-giuliani11</a>
+                    </li>
+                    <li class="col-12 col-sm-6 col-lg-4 col-xl-3 d-flex flex-row flex-sm-row-reverse flex-lg-row">
+                        <span class="bi bi-github"></span>
+                        <a href="https://github.com/giuluck" target="_blank">giuluck</a>
+                    </li>
+                </ul>
+            </div>
         </div>
     </header>
 
-    <main>
-        Test
-    </main>
+    <nav class="navbar navbar-expand">
+        <ul class="navbar-nav d-flex justify-content-evenly w-100">
+            <li class="nav-item active">
+                <a class="nav-link" aria-current="page" ng-href="#about">
+                    <span class="d-inline bi bi-house-fill"></span>
+                    <span class="d-none d-md-inline">ABOUT ME</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#education">
+                    <span class="d-inline bi bi-mortarboard-fill"></span>
+                    <span class="d-none d-md-inline">EDUCATION</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+
+    <main ng-view></main>
 </div>
 </body>
 
