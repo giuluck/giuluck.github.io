@@ -1,0 +1,44 @@
+<div id="about">
+    <div ng-bind-html="about.description" class="justified"></div>
+    <div class="row">
+        <div class="skills col-12 col-md-4">
+            <h3>Hard Skills</h3>
+            <div ng-repeat="item in about.hardSkills track by item.name" class="skill">
+                <h5>{{item.name}}</h5>
+                <div class="level-bar">
+                    <div class="bar bar-inner"
+                         data-level="{{item.value}}%"
+                         ng-style="{'width': item.value + '%'}">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="skills col-12 col-md-4">
+            <h3>Soft Skills</h3>
+            <div ng-repeat="item in about.softSkills" class="skill">
+                <h5>{{item.name}}</h5>
+                <div class="bar bar-outer">
+                    <div class="bar bar-inner"
+                         data-level="{{item.value}}%"
+                         ng-style="{'width': item.value + '%'}">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="skills col-12 col-md-4">
+            <h3>Lingue</h3>
+            <div ng-repeat="item in about.languages" class="skill">
+                <div class="d-flex align-items-center justify-content-between">
+                    <h5>{{item.name}}</h5>
+                    <span class="comment">{{item.comment}}</span>
+                </div>
+                <div class="bar bar-outer">
+                    <div class="bar bar-inner"
+                         data-level="{{item.value}}%"
+                         ng-style="{'width': item.value + '%'}">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

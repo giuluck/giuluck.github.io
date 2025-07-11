@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700");
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;1,400");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800");
 
 :root {
     --darker: #090909;
@@ -7,12 +7,21 @@
     --medium: #4B86B4;
     --light: #D9E4F2;
     --lighter: #F3F3F6;
-    --photo-half: 120px;
-    --border-size: 10px;
+    --background: #FCFCFC;
+    --photo-half: 90px;
+    --border-size: 5px;
+    --title-height: 130px;
+    --margin-side: 0px;
+    --margin-top: 0px;
 
-    @media (max-width: 575px) {
-        --photo-half: 90px;
-        --border-size: 5px;
+    @media (min-width: 768px) {
+        --photo-half: 120px;
+        --border-size: 10px;
+    }
+
+    @media (min-width: 1200px) {
+        --margin-side: calc((100vw - 1200px) / 2);
+        --margin-top: min(30px, var(--margin-side));
     }
 }
 
@@ -21,11 +30,12 @@ body {
     font-size: 16px;
     color: var(--darker);
     background: var(--lighter);
+    overflow-x: hidden;
 
     #language {
         position: absolute;
         background-color: rgba(0, 0, 0, 0);
-        margin: 10px 12px 0 0;
+        margin: 5px 12px 0 0;
         border: none;
         right: 0;
     }
@@ -43,17 +53,23 @@ body {
         color: inherit;
     }
 
+    .justified {
+        text-align: justify;
+        text-justify: inter-word;
+    }
+
     @media (min-width: 1200px) {
-        margin: min(30px, calc(100vw - 1200px) / 2);
+        margin: var(--margin-top);
+        background: var(--background);
 
         #language {
-            top: min(30px, calc(100vw - 1200px) / 2);
-            right: calc((100vw - 1200px) / 2);
+            top: var(--margin-top);
+            right: var(--margin-side);
         }
 
         #curriculum {
             margin: auto;
-            max-width: 1200px;
+            width: 1200px;
         }
 
         header {
@@ -69,6 +85,12 @@ body {
             border-radius: 5px;
             border: 1px solid var(--dark);
         }
+
+        footer {
+            padding: 20px 15px;
+            background: var(--background);
+            margin: 0 var(--margin-side);
+        }
     }
 }
 
@@ -82,7 +104,7 @@ header {
         background-color: var(--dark);
         padding: 50px 0 calc(20px + var(--photo-half)) 0;
         text-align: center;
-        min-height: 130px;
+        height: calc(130px + var(--photo-half));
         width: 100%;
 
         h1 {
@@ -91,45 +113,50 @@ header {
     }
 
     #photo {
-        margin: calc(-1 * var(--photo-half)) 0 0 0;
-        width: calc(2 * var(--photo-half));
+        position: absolute;
         border-radius: 100%;
         border: var(--border-size) solid var(--lighter);
         box-shadow: 0 1px 1px var(--lighter);
-    }
-
-    #toggler {
-        position: absolute;
-        margin-top: -55px;
-        font-size: 25px;
-        right: 20px;
-        color: var(--darker);
-        text-decoration: none;
-    }
-
-    #toggler[aria-expanded=true] {
-        #open {
-            display: none;
-        }
-
-        #close {
-            display: block;
-        }
-    }
-
-    #toggler[aria-expanded=false] {
-        #open {
-            display: block;
-        }
-
-        #close {
-            display: none;
-        }
+        width: calc(2 * var(--photo-half));
+        top: var(--title-height);
     }
 
     #info {
-        margin: calc(-1 * var(--photo-half)) 5px 0 5px;
+        margin: 0 5px;
         padding: 25px 0 10px 0;
+        min-height: 90px;
+
+        #toggler {
+            position: absolute;
+            right: 0;
+            font-size: 25px;
+            color: var(--darker);
+            text-decoration: none;
+
+            .bi {
+                padding: 10px;
+            }
+        }
+
+        #toggler[aria-expanded=true] {
+            #open {
+                display: none;
+            }
+
+            #close {
+                display: block;
+            }
+        }
+
+        #toggler[aria-expanded=false] {
+            #open {
+                display: block;
+            }
+
+            #close {
+                display: none;
+            }
+        }
 
         ul {
             margin: 0;
@@ -147,22 +174,22 @@ header {
                 }
             }
         }
-
     }
 
     @media (min-width: 768px) {
         #title {
-            margin: calc(var(--photo-half) / 2) 0 0 0;
+            margin: calc(15px + var(--photo-half) / 2) 0 0 0;
             padding: 0 0 0 calc(2 * var(--photo-half) + 20px + 10%);
+            height: var(--title-height);
             text-align: left;
             width: 100%;
         }
 
         #photo {
-            position: absolute;
             align-self: start;
-            margin: 15px;
+            margin: calc(15px + var(--margin-top)) 0 0 15px;
             z-index: 1;
+            top: 0;
         }
 
         #info {
@@ -175,13 +202,89 @@ header {
 nav {
     a span {
         color: var(--darker);
+
     }
 
     a:hover span {
         color: var(--medium);
     }
+
+    .bi {
+        vertical-align: middle;
+        font-size: 22px;
+        margin: 0 10px;
+    }
+
+    @media (min-width: 992px) {
+        .bi {
+            font-size: 18px;
+        }
+    }
 }
 
 main {
-    background-color: white;
+    border-top: 1px solid var(--light);
+    background-color: var(--lighter);
+    margin-bottom: 65px;
+    padding: 20px 30px;
+
+    strong {
+        color: var(--dark);
+    }
+
+    a {
+        color: var(--dark);
+        font-weight: 500;
+    }
+
+    a:hover {
+        color: var(--medium);
+
+        strong {
+            color: var(--medium);
+        }
+    }
+
+    p {
+        margin: 10px 0;
+    }
+}
+
+footer {
+    border-top: 1px solid var(--light);
+    background-color: var(--lighter);
+    text-align: right;
+    font-size: 10px;
+    padding: 10px 30px;
+}
+
+#about {
+    .skills {
+        margin: 30px 0;
+
+        .skill {
+            padding: 5px 0;
+
+            .bar {
+                height: 8px;
+                border-radius: 8px;
+            }
+
+            .bar-outer {
+                background-color: var(--light);
+            }
+
+            .bar-inner {
+                background-color: var(--dark);
+            }
+
+            .comment {
+                font-size: 14px;
+                font-weight: 300;
+                padding-right: 5px;
+            }
+        }
+
+    }
+
 }
