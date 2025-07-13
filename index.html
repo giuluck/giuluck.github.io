@@ -41,32 +41,39 @@
                     </li>
                 </ul>
             </div>
-            <a class="d-block d-sm-none"
+            <a class="d-block d-sm-none toggler"
                data-bs-toggle="collapse"
-               id="toggler"
                role="button"
                href="#toggled"
                aria-expanded="false"
                aria-controls="toggled">
-                <span id="open" class="bi bi-plus-lg"></span>
-                <span id="close" class="bi bi-dash-lg"></span>
+                <span class="bi bi-plus-lg open"></span>
+                <span class="bi bi-dash-lg close"></span>
             </a>
         </div>
     </header>
 
     <nav class="navbar navbar-expand">
-        <ul class="navbar-nav d-flex justify-content-around w-100">
-            <li ng-repeat="item in navbar" class="nav-item {{::($first ? 'active' : '')}}">
+        <ul class="row navbar-nav w-100">
+            <li ng-repeat="(title, details) in sections"
+                class="col-3 text-center nav-item p-0"
+                ng-class="title === page ? 'page' : ''">
                 <!-- aria-current="page" -->
-                <a class="nav-link" ng-href="#{{item.page}}">
-                    <span class="d-inline bi bi-{{item.icon}}"></span>
-                    <span class="d-none d-md-inline text-uppercase">{{item.text}}</span>
+                <a class="nav-link px-0" ng-href="#{{title}}">
+                    <span class="d-inline bi bi-{{details.icon}}"></span>
+                    <span class="d-none d-lg-inline text-uppercase">{{details.text}}</span>
                 </a>
             </li>
         </ul>
     </nav>
 
-    <main ng-view></main>
+    <main>
+        <div class="d-none section">
+            <h2 class="bi bi-{{sections[page].icon}} me-2"></h2>
+            <h2 class="text-uppercase">{{sections[page].text}}</h2>
+        </div>
+        <div ng-view id="{{page}}"></div>
+    </main>
 
     <footer class="fixed-bottom">{{footer}}</footer>
 </div>

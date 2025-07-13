@@ -7,20 +7,22 @@ function templates($scope) {
     if (vocabularies[language] === undefined) {
         vocabularies[language] = Object.fromEntries(
             Object.entries(translations).map(
-                ([key, value]) => [key, value['it']]
+                ([key, value]) => [key, value[language]]
             )
         )
     }
     const vocabulary = vocabularies[language]
 
+    $scope.vocabulary = vocabulary
+
     $scope.footer = vocabulary.gdpr
 
-    $scope.navbar = [
-        {page: "about", icon: "person-circle", text: vocabulary.about},
-        {page: "education", icon: "mortarboard-fill", text: vocabulary.education},
-        {page: "publications", icon: "file-earmark-bar-graph-fill", text: vocabulary.publications},
-        {page: "projects", icon: "archive-fill", text: vocabulary.projects}
-    ]
+    $scope.sections = {
+        about: {icon: "person-circle", text: vocabulary.about},
+        education: {icon: "mortarboard-fill", text: vocabulary.education},
+        publications: {icon: "file-earmark-bar-graph-fill", text: vocabulary.publications},
+        projects: {icon: "archive-fill", text: vocabulary.projects}
+    }
 
     $scope.info = [
         {
@@ -39,10 +41,9 @@ function templates($scope) {
             icon: "envelope-open-fill",
             html: `<a href="mailto:giuluck9@gmail.com" target="_blank">giuluck9@gmail.com</a>`
         },
-        {icon: "telephone-fill", html: `<a href="tel:(+39) 338 2037596" target="_blank">(+39) 338 2037596</a>`},
         {
-            icon: "globe2",
-            html: `<a href="https://giuluck.github.io/#/about?lang=${language}" target="_blank">giuluck.github.io</a>`
+            icon: "telephone-fill",
+            html: `<a href="tel:(+39) 338 2037596" target="_blank">${vocabulary.number}</a>`
         },
         {
             icon: "linkedin",
@@ -51,26 +52,29 @@ function templates($scope) {
         {
             icon: "github",
             html: `<a href="https://github.com/giuluck" target="_blank">giuluck</a>`
+        },
+        {
+            icon: "globe2",
+            html: `<a href="https://giuluck.github.io/#/about?lang=${language}" target="_blank">giuluck.github.io</a>`
         }
     ]
 
-    $scope.about = {
-        description: vocabulary.description,
-        hardSkills: [
-            {name: "Machine Learning", value: 94},
-            {name: vocabulary.development, value: 90},
-            {name: vocabulary.visualization, value: 88},
-            {name: vocabulary.optimization, value: 86},
+    $scope.skills = {
+        "Hard Skills": [
+            {name: vocabulary.development, value: 96, comment: `~10 ${vocabulary.years.toLowerCase()}`},
+            {name: "Machine Learning", value: 94, comment: `~5 ${vocabulary.years.toLowerCase()}`},
+            {name: vocabulary.visualization, value: 90, comment: `~3 ${vocabulary.years.toLowerCase()}`},
+            {name: vocabulary.optimization, value: 86, comment: `~3 ${vocabulary.years.toLowerCase()}`},
         ],
-        softSkills: [
-            {name: vocabulary.organization, value: 96},
-            {name: vocabulary.creativity, value: 94},
-            {name: "Problem Solving", value: 90},
+        "Soft Skills": [
+            {name: vocabulary.organization, value: 94},
+            {name: vocabulary.creativity, value: 92},
+            {name: "Problem Solving", value: 88},
             {name: "Team Work", value: 86},
         ],
-        languages: [
+        [vocabulary.languages]: [
             {name: vocabulary.italian, value: 100, comment: vocabulary.native},
-            {name: vocabulary.english, value: 85, comment: vocabulary.c1},
+            {name: vocabulary.english, value: 86, comment: vocabulary.c1},
         ]
     }
 }
