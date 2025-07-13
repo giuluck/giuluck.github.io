@@ -15,17 +15,20 @@ angular.module("module", ["ngRoute", "ngSanitize"])
         // change page value every time there is a new routing
         $scope.$on('$routeChangeSuccess', function (event, route) {
             $scope.page = route.$$route.originalPath.substring(1)
-            console.log($scope.page)
         })
 
         // handle language settings
         $scope.$on('$locationChangeStart', () => $location.search("lang", $scope.language))
-        $scope.languageSwitch = () => set($scope.language === "en" ? "it" : "en")
-        set($location.search().lang === "en" ? "en" : "it")
+        $scope.languageSwitch = () => set($scope.language === "it" ? "en" : "it")
+        set($location.search().lang === "it" ? "it" : "en")
 
         function set(language) {
             $scope.language = language
             $location.search("lang", language)
-            templates($scope)
+            update($scope)
         }
     })
+
+function resize(main, footer) {
+    main.style.minHeight = (window.innerHeight - footer.offsetHeight - 70) + "px"
+}

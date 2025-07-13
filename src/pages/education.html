@@ -1,1 +1,25 @@
-education.html
+<ul id="education">
+    <li class="experience" ng-repeat="experience in education">
+        <a class="row align-items-center toggler"
+           href="#education-{{$index}}"
+           data-bs-toggle="collapse"
+           role="button"
+           aria-expanded="false"
+           aria-controls="toggled">
+            <div class="col-lg-9">
+                <span class="bi bi-plus-circle open"></span>
+                <span class="bi bi-dash-circle close"></span>
+                <strong>{{experience.tag}}</strong>
+                {{experience.preposition}}
+                <strong>{{experience.institution}}</strong>
+                <span ng-if="experience.mark !== undefined">— {{experience.mark}}</span>
+            </div>
+            <span class="col-lg-3 text-lg-end period">{{experience.period}}</span>
+        </a>
+        <div id="education-{{$index}}" class="col-lg-10 collapse description">
+            <div ng-repeat="(key, detail) in experience.description">
+                <strong>{{key}}</strong>: <span ng-bind-html="detail"></span>
+            </div>
+        </div>
+    </li>
+</ul>
