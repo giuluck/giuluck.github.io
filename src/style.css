@@ -341,66 +341,104 @@ footer {
     }
 }
 
-#education {
+#education, #publications {
     border-left: 1px solid var(--darker);
     margin-left: 13px;
 
-    .experience {
+    li {
         margin: 0 0 15px 35px;
+        font-size: calc(1.1 * var(--font-size));
 
-        a {
+        .bi {
+            background: var(--lighter);
+            position: absolute;
+            padding: 1px 0;
+            margin-left: -44px;
+        }
+
+        .title, .title strong {
             color: var(--darker);
+        }
+
+        .toggler {
             text-decoration: none;
-            font-size: calc(1.1 * var(--font-size));
+        }
 
-            strong {
-                color: var(--darker);
-            }
+        .toggler:hover {
+            color: inherit;
 
-            .bi {
-                background: var(--lighter);
-                position: absolute;
-                padding: 1px 0;
-                margin-left: -44px;
-            }
-
-            .period {
-                font-size: var(--font-size);
-                font-style: italic;
-                font-weight: 300;
+            :not(.small) {
+                text-decoration: underline;
             }
         }
 
-        a:hover {
-            color: var(--darker);
-
-            :not(.period) {
-                text-decoration: underline;
-            }
+        .small {
+            font-size: var(--font-size);
+            font-weight: 300;
         }
 
         .description {
             font-size: calc(0.9 * var(--font-size));
 
-            ul {
-                margin: 0 25px;
-                list-style: square;
-
-                li {
-                    margin: 3px 0;
-                }
-            }
-
             a {
-                font-size: calc(0.9 * var(--font-size));
-                text-decoration: underline;
                 color: var(--dark);
+                font-size: inherit;
+                text-decoration: underline;
             }
 
             a:hover {
                 color: var(--medium);
             }
         }
+
+    }
+}
+
+#education {
+    .small {
+        font-style: italic;
+    }
+
+    .description {
+        ul {
+            font-size: calc(0.8 * var(--font-size));
+            margin: 0 25px;
+            list-style: square;
+
+            li {
+                margin: 3px 0;
+            }
+        }
+
+        a {
+            font-weight: 500;
+        }
+
+        strong a {
+            font-weight: bold;
+        }
+    }
+}
+
+#publications {
+    p {
+        margin: 5px 0;
+    }
+
+    u {
+        color: var(--dark);
+        text-decoration: none;
+    }
+
+
+    .title:hover, .title:hover strong {
+        color: var(--dark);
+    }
+
+    .small .bi {
+        background: transparent;
+        position: relative;
+        margin: 0;
     }
 }
 
@@ -447,7 +485,7 @@ footer {
     }
 
     /** #language **/
-    nav, .toggler {
+    nav {
         display: none !important;
     }
 

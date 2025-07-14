@@ -1,1 +1,23 @@
-publications.html
+<ul id="publications">
+    <li ng-repeat="paper in publications">
+        <div class="d-flex justify-content-between">
+            <div>
+                <span class="bi bi-circle"></span>
+                <a class="title" href="{{paper.link}}" target="_blank"><strong>{{paper.title}}</strong></a>
+                <div ng-bind-html="paper.authors"></div>
+                <div class="small">{{paper.publisher}}</div>
+            </div>
+            <a class="small toggler ms-4"
+               href="#paper-{{$index}}"
+               data-bs-toggle="collapse"
+               role="button"
+               aria-expanded="false"
+               aria-controls="toggled">
+                <span class="bi bi-plus open"></span>
+                <span class="bi bi-dash close"></span>
+                <span>Abstract</span>
+            </a>
+        </div>
+        <p id="paper-{{$index}}" class="collapse description justified">{{paper.abstract}}</p>
+    </li>
+</ul>
