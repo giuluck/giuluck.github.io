@@ -341,7 +341,7 @@ footer {
     }
 }
 
-#education, #publications {
+#education, #publications, #projects {
     border-left: 1px solid var(--darker);
     margin-left: 13px;
 
@@ -349,15 +349,30 @@ footer {
         margin: 0 0 15px 35px;
         font-size: calc(1.1 * var(--font-size));
 
-        .bi {
+        p {
+            margin: 5px 35px 5px 2px;
+            padding: 0 5px;
+            border-left: 2px solid var(--light);
+        }
+
+        a {
+            color: inherit;
+            font-weight: inherit;
+        }
+
+        a:hover {
+            color: var(--medium);
+        }
+
+        strong {
+            color: var(--darker);
+        }
+
+        .timeline {
             background: var(--lighter);
             position: absolute;
             padding: 1px 0;
             margin-left: -44px;
-        }
-
-        .title, .title strong {
-            color: var(--darker);
         }
 
         .toggler {
@@ -378,19 +393,24 @@ footer {
         }
 
         .description {
-            font-size: calc(0.9 * var(--font-size));
+            width: 100%;
 
             a {
                 color: var(--dark);
                 font-size: inherit;
                 text-decoration: underline;
+                font-weight: 500;
             }
 
             a:hover {
                 color: var(--medium);
             }
-        }
 
+            strong, strong a {
+                color: var(--dark);
+                font-weight: bold;
+            }
+        }
     }
 }
 
@@ -400,45 +420,28 @@ footer {
     }
 
     .description {
+        font-size: calc(0.9 * var(--font-size));
+
         ul {
-            font-size: calc(0.8 * var(--font-size));
             margin: 0 25px;
             list-style: square;
 
             li {
+                font-size: calc(0.85 * var(--font-size));
                 margin: 3px 0;
             }
-        }
-
-        a {
-            font-weight: 500;
-        }
-
-        strong a {
-            font-weight: bold;
         }
     }
 }
 
-#publications {
-    p {
-        margin: 5px 0;
-    }
-
+#publications, #projects {
     u {
-        color: var(--dark);
+        color: var(--medium);
         text-decoration: none;
     }
 
-
-    .title:hover, .title:hover strong {
-        color: var(--dark);
-    }
-
-    .small .bi {
-        background: transparent;
-        position: relative;
-        margin: 0;
+    .description {
+        font-size: calc(0.85 * var(--font-size));
     }
 }
 
@@ -485,7 +488,7 @@ footer {
     }
 
     /** #language **/
-    nav {
+    nav, .toggler {
         display: none !important;
     }
 

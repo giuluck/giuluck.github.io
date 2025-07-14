@@ -2,8 +2,11 @@
     <li ng-repeat="paper in publications">
         <div class="d-flex justify-content-between">
             <div>
-                <span class="bi bi-circle"></span>
-                <a class="title" href="{{paper.link}}" target="_blank"><strong>{{paper.title}}</strong></a>
+                <span class="bi bi-circle timeline"></span>
+                <strong>
+                    <a ng-if="paper.link !== undefined" href="{{paper.link}}" target="_blank">{{paper.title}}</a>
+                    <span ng-if="paper.link === undefined">{{paper.title}}</span>
+                </strong>
                 <div ng-bind-html="paper.authors"></div>
                 <div class="small">{{paper.publisher}}</div>
             </div>
@@ -13,11 +16,10 @@
                role="button"
                aria-expanded="false"
                aria-controls="toggled">
-                <span class="bi bi-plus open"></span>
-                <span class="bi bi-dash close"></span>
-                <span>Abstract</span>
+                <span class="bi bi-plus-lg open"></span>
+                <span class="bi bi-dash-lg close"></span>
             </a>
         </div>
-        <p id="paper-{{$index}}" class="collapse description justified">{{paper.abstract}}</p>
+        <p id="paper-{{$index}}" class="collapse description"><strong>Abstract</strong>: {{paper.abstract}}</p>
     </li>
 </ul>
