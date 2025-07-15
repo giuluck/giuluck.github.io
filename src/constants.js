@@ -1,3 +1,24 @@
+function sections(select = (en, it) => undefined) {
+    return {
+        about: {
+            icon: "person-circle",
+            text: select("About Me", "Chi Sono")
+        },
+        education: {
+            icon: "mortarboard-fill",
+            text: select("Education & Work", "Formazione & Lavoro")
+        },
+        publications: {
+            icon: "file-earmark-bar-graph-fill",
+            text: select("Publications", "Pubblicazioni")
+        },
+        projects: {
+            icon: "archive-fill",
+            text: select("Projects", "Progetti")
+        }
+    }
+}
+
 function build(language) {
     const select = (en, it) => language === "it" ? it : en
 
@@ -7,30 +28,13 @@ function build(language) {
     const unibo = select("University of Bologna", "Università di Bologna")
 
     return {
+        // SECTIONS DATA
+        sections: sections(select),
         // FOOTER DATA
         footer: select(
             "I hereby authorize the use of my personal data in accordance to the GDPR 679/16 - European regulation on the protection of personal data.",
             "Autorizzo il trattamento dei miei dati personali presenti nel curriculum ai sensi del Decreto Legislativo 30 giugno 2003, n. 196 e del GDPR (Regolamento UE 2016/679)."
         ),
-        // SECTIONS DATA
-        sections: {
-            about: {
-                icon: "person-circle",
-                text: select("About Me", "Chi Sono")
-            },
-            education: {
-                icon: "mortarboard-fill",
-                text: select("Education & Work", "Formazione & Lavoro")
-            },
-            publications: {
-                icon: "file-earmark-bar-graph-fill",
-                text: select("Publications", "Pubblicazioni")
-            },
-            projects: {
-                icon: "archive-fill",
-                text: select("Projects", "Progetti")
-            }
-        },
         // INFO DATA
         info: [{
             icon: "gender-male",
@@ -42,34 +46,32 @@ function build(language) {
             icon: "geo-alt-fill",
             html: select("Bologna, Italy (IT)", "Bologna (BO), 40129"),
         }, {
-            icon: "envelope-open-fill",
-            html: `<a href="mailto:giuluck9@gmail.com" target="_blank">giuluck9@gmail.com</a>`
+            icon: "globe2",
+            html: `<a href="https://giuluck.github.io/#/about?lang=${language}" target="_blank">giuluck.github.io</a>`
         }, {
             icon: "telephone-fill",
             html: `<a href="tel:(+39) 338 2037596" target="_blank">(+39) 338 2037596</a>`
+        }, {
+            icon: "envelope-open-fill",
+            html: `<a href="mailto:giuluck9@gmail.com" target="_blank">giuluck9@gmail.com</a>`
         }, {
             icon: "linkedin",
             html: `<a href="https://linkedin.com/in/luca-giuliani11" target="_blank">luca-giuliani11</a>`
         }, {
             icon: "github",
             html: `<a href="https://github.com/giuluck" target="_blank">giuluck</a>`
-        }, {
-            icon: "globe2",
-            html: `<a href="https://giuluck.github.io/#/about?lang=${language}" target="_blank">giuluck.github.io</a>`
         }],
         // DESCRIPTION DATA
         description: select(
-            `<p>I am a <a href="https://www.unibo.it/sitoweb/luca.giuliani13/en" target="_blank"><strong>post-doc researcher</strong></a> at the Department of Computer Science and Engineering (DISI) of the University of Bologna.</p>
-            <p>I work on <strong>Constrained Machine Learning</strong> applied to <strong>Algorithmic Fairness</strong>, with a PhD dissertation titled “<a href="https://github.com/giuluck/non-linear-correlations/blob/main/dissertation.pdf" target="_blank">Detection and Enforcement of Non-Linear Correlations for Fair and Robust Machine Learning Applications</a>”. I also explored other areas of Artificial Intelligence, such as music generation models and decision-focused learning for combinatorial optimization problems.</p>
-            <p>In my free time, I like to go to concerts and make music. I played for 7 years in an electropop duo called <a href="https://open.spotify.com/intl-it/artist/2wvpQCjOmseuzCLC9orKpn" target="_blank">Divinae Miranda</a>, with which I published two albums, and I am now working on my new solo project (<a href="https://sempreverdesound.github.com/" target="_blank">SempreVerde</a>) where I blend italian singing/songwriting tradition with electronic elements.</p>`,
-            `<p>Sono un <a href="https://www.unibo.it/sitoweb/luca.giuliani13" target="_blank"><strong>ricercatore post-doc</strong></a> presso il Dipartimento di Informatica: Scienza e Ingegneria (DISI) dell’Università di Bologna.</p>
-            <p>Mi occupo di <strong>Machine Learning Vincolato</strong> applicato alla <strong>Fairness Algoritmica</strong>, con una tesi di dottorato dal titolo "<a href="https://github.com/giuluck/non-linear-correlations/blob/main/dissertation.pdf" target="_blank">Detection and Enforcement of Non-Linear Correlations for Fair and Robust Machine Learning Applications</a>". Ho inoltre esplorato altri ambiti dell'Intelligenza Artificiale, quali la generazione di brani musicali e il decision-focused learning per problemi di ottimizzazione.</p>
-            <p>Nel tempo libero, mi piace andare ai concerti e fare musica. Ho suonato per 7 anni in un duo elettropop chiamato <a href="https://open.spotify.com/intl-it/artist/2wvpQCjOmseuzCLC9orKpn" target="_blank">Divinae Miranda</a>, con cui ho pubblicato due album, e adesso sto lavorando al mio nuovo progetto solista (<a href="https://sempreverdesound.github.com/" target="_blank">SempreVerde</a>) dove mescolo cantautorato italiano e musica elettronica.</p>`
+            `<p>I am a <a href="https://www.unibo.it/sitoweb/luca.giuliani13/en" target="_blank"><strong>post-doc researcher</strong></a> at the Computer Science and Engineering Department of the University of Bologna.</p>
+            <p>I mainly work on <strong>Constrained Machine Learning</strong> applied to <strong>Algorithmic Fairness</strong>, with a PhD dissertation titled “<a href="https://github.com/giuluck/non-linear-correlations/blob/main/dissertation.pdf" target="_blank">Detection and Enforcement of Non-Linear Correlations for Fair and Robust Machine Learning Applications</a>”, but I also explored other areas of Artificial Intelligence, such as music generation models and decision-focused learning for combinatorial optimization problems.</p>`,
+            `<p>Sono un <a href="https://www.unibo.it/sitoweb/luca.giuliani13" target="_blank"><strong>ricercatore post-doc</strong></a> presso il Dipartimento di Informatica dell’Università di Bologna.</p>
+            <p>Mi occupo principalmente di <strong>Machine Learning Vincolato</strong> applicato alla <strong>Fairness Algoritmica</strong>, con una tesi di dottorato dal titolo "<a href="https://github.com/giuluck/non-linear-correlations/blob/main/dissertation.pdf" target="_blank">Detection and Enforcement of Non-Linear Correlations for Fair and Robust Machine Learning Applications</a>", ma ho esplorato anche altri ambiti dell'Intelligenza Artificiale, quali la generazione di brani musicali e il decision-focused learning per problemi di ottimizzazione.</p>`
         ),
         // SKILLS DATA
         skills: {
             "Hard Skills": [{
-                name: select("Software Development", "Sviluppo Software"),
+                name: select("Programming", "Programmazione"),
                 comment: `~10 ${years}`,
                 value: 96
             }, {

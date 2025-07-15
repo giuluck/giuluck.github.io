@@ -1,33 +1,31 @@
-<div id="about">
-    <div ng-bind-html="description" class="justified"></div>
-    <ul id="skills" class="row">
-        <li ng-repeat="(title, skillset) in skills" class="skills col-lg-4">
-            <div class="d-flex justify-content-between title">
-                <h3>{{title}}</h3>
-                <a class="d-block d-lg-none toggler"
-                   data-bs-toggle="collapse"
-                   role="button"
-                   href="#skills-{{$index}}"
-                   aria-expanded="true"
-                   aria-controls="toggled">
-                    <span class="bi bi-plus-lg open"></span>
-                    <span class="bi bi-dash-lg close"></span>
-                </a>
-            </div>
-            <ul id="skills-{{$index}}" class="show skillset">
-                <li ng-repeat="skill in skillset" class="skill">
-                    <div class="d-flex align-items-center justify-content-between">
-                        <h5>{{skill.name}}</h5>
-                        <span class="comment">{{skill.comment}}</span>
+<div ng-bind-html="description" class="justified"></div>
+<ul id="skills" class="row">
+    <li ng-repeat="(title, skillset) in skills" class="skills col-lg-4">
+        <div class="d-flex justify-content-between title">
+            <h3>{{title}}</h3>
+            <a class="d-block d-lg-none toggler"
+               data-bs-toggle="collapse"
+               role="button"
+               href="#skills-{{$index}}"
+               aria-expanded="true"
+               aria-controls="toggled">
+                <span class="bi bi-plus-lg open"></span>
+                <span class="bi bi-dash-lg close"></span>
+            </a>
+        </div>
+        <ul id="skills-{{$index}}" class="show skillset d-lg-block">
+            <li ng-repeat="skill in skillset" class="skill">
+                <div class="d-flex align-items-center justify-content-between mb-1">
+                    <div>{{skill.name}}</div>
+                    <span class="comment">{{skill.comment}}</span>
+                </div>
+                <div class="bar bar-outer">
+                    <div class="bar bar-inner"
+                         data-level="{{skill.value}}%"
+                         ng-style="{'width': skill.value + '%'}">
                     </div>
-                    <div class="bar bar-outer">
-                        <div class="bar bar-inner"
-                             data-level="{{skill.value}}%"
-                             ng-style="{'width': skill.value + '%'}">
-                        </div>
-                    </div>
-                </li>
-            </ul>
-        </li>
-    </ul>
-</div>
+                </div>
+            </li>
+        </ul>
+    </li>
+</ul>

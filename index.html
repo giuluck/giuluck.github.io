@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="it">
+<html ng-app="module" ng-controller="controller" lang="{{language}}">
 
 <head>
     <title>Luca Giuliani</title>
@@ -21,20 +21,18 @@
     <script src="src/controller.js"></script>
 </head>
 
-<body ng-app="module" ng-controller="controller">
-<div id="curriculum">
-    <img id="language"
-         ng-click="languageSwitch()"
-         ng-src="res/{{language === 'it' ? 'en' : 'it'}}.png"
-         alt="Language Flag Switch">
+<body>
+<button id="print" ng-if="page === 'complete'" ng-click="switchPrint()">{{printToggle}}</button>
+<img id="language" ng-click="switchLanguage()" ng-src="res/{{languageToggle}}.png" alt="Language Flag Switch">
+<div id="curriculum" ng-class="'print-' + print">
     <header class="d-flex flex-column align-items-center">
         <div id="title" class="d-flex flex-column justify-content-center">
             <h1><strong>LUCA GIULIANI, PhD</strong></h1>
-            <h4>Data & Computer Scientist</h4>
+            <h5>Data & Computer Scientist</h5>
         </div>
         <img id="photo" src="res/profile.jpg" alt="Profile Picture"/>
         <div id="info" class="d-flex">
-            <div id="toggled" class="collapse d-sm-block">
+            <div id="toggled" class="collapse d-sm-block d-print-block">
                 <ul class="row">
                     <li ng-repeat="item in info" class="col-sm-6 col-lg-4 col-xl-3
                     d-flex flex-row {{::($odd ? 'flex-sm-row-reverse flex-lg-row' : '')}}">
@@ -69,13 +67,7 @@
         </ul>
     </nav>
 
-    <main>
-        <div class="d-none section">
-            <h2 class="bi bi-{{sections[page].icon}} me-2"></h2>
-            <h2 class="text-uppercase">{{sections[page].text}}</h2>
-        </div>
-        <div ng-view></div>
-    </main>
+    <main ng-class="page" ng-view></main>
 
     <footer class="fixed-bottom">{{footer}}</footer>
 </div>
