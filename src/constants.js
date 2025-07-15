@@ -100,6 +100,19 @@ function build(language) {
                 name: "Team Work",
                 value: 86
             }],
+            [select("Programming", "Programmazione")]: [{
+                name: "Python + sklearn / keras / torch",
+                value: 96
+            }, {
+                name: "Java / Kotlin / Scala",
+                value: 94
+            }, {
+                name: "Git / Docker / GitHub Actions",
+                value: 86
+            }, {
+                name: select("Web Stack", "Stack Web"),
+                value: 80,
+            }],
             [select("Languages", "Lingue")]: [{
                 name: select("Italian", "Italiano"),
                 comment: select("Native", "Nativo"),
@@ -112,6 +125,7 @@ function build(language) {
         },
         // EDUCATION DATA
         education: [{
+            relevant: true,
             role: select("Research Fellow", "Assegnista di Ricerca"),
             preposition: at,
             institution: unibo,
@@ -135,6 +149,7 @@ function build(language) {
                 </ul>`
             })
         }, {
+            relevant: true,
             role: select("Teaching Assistant", "Tutor Didattico"),
             preposition: at,
             institution: unibo,
@@ -152,6 +167,7 @@ function build(language) {
                 'Coordinamento al Supporto alla Preparazione degli Esami di Ambito Informatico': `2021/22.`
             })
         }, {
+            relevant: true,
             role: select("PhD", "Dottorato"),
             preposition: "in",
             institution: "Computer Science & Engineering",
@@ -175,6 +191,7 @@ function build(language) {
                     <li><a href="https://fondazione-fair.it/en/project/" target="_blank">FAIR</a>: Future Artificial Intelligence Research (Italian NRRP — Correlated).</li>
                 </ul>`
             }, {
+                relevant: true,
                 Istituzione: `Università di Bologna`,
                 Tesi: `“<a href="https://github.com/giuluck/non-linear-correlations/blob/main/dissertation.pdf" target="_blank">Detection and Enforcement of Non-Linear Correlations for Fair and Robust Machine Learning Applications</a>”.`,
                 "Temi di Ricerca": `<ul>
@@ -193,11 +210,12 @@ function build(language) {
                 </ul>`
             })
         }, {
-            role: select("Master Degree", "Laurea Magistrale"),
+            relevant: true,
+            role: select("MSc", "Laurea Magistrale"),
             preposition: "in",
             institution: "Artificial Intelligence",
             link: `https://corsi.unibo.it/${select("2cycle", "magistrale")}/artificial-intelligence`,
-            mark: `110/110 ${select("with Honors", "con Lode")}`,
+            mark: select("110/110 with Honors", "110/110 e Lode"),
             period: "09/2019 - 07/2021",
             description: select({
                 Institution: `University of Bologna.`,
@@ -219,6 +237,7 @@ function build(language) {
                 </ul>`
             })
         }, {
+            relevant: true,
             role: select("Academic Internship", "Tirocinio Accademico"),
             preposition: at,
             institution: unibo,
@@ -240,11 +259,12 @@ function build(language) {
                     </ul>`
             })
         }, {
-            role: select("Bachelor Degree", "Laurea"),
+            relevant: true,
+            role: select("BSc", "Laurea"),
             preposition: "in",
             institution: select("Computer Science & Engineering", "Ingegneria e Scienze Informatiche"),
             link: `https://corsi.unibo.it/${select("1cycle/ComputerScienceEngineering", "laurea/IngegneriaScienzeInformatiche")}`,
-            mark: `110/110 ${select("with Honors", "con Lode")}`,
+            mark: select("110/110 with Honors", "110/110 e Lode"),
             period: "09/2016 - 10/2019",
             description: select({
                 Institution: `University of Bologna, Cesena Campus.`,
@@ -264,6 +284,7 @@ function build(language) {
                 </ul>`
             })
         }, {
+            relevant: true,
             role: select("Professional Stage", "Stage Professionale"),
             preposition: at,
             institution: select("Loccioni Group", "Gruppo Loccioni"),
@@ -277,6 +298,7 @@ function build(language) {
                 Progetto: `Sviluppo di un'<em>applicazione web in AngularJS</em> per il controllo delle condizioni ambientali di un luogo di lavoro.`
             })
         }, {
+            relevant: false,
             institution: select("Scientific High School", "Liceo Scientifico (Scienze Applicate)"),
             mark: "100/100",
             period: "09/2011 - 07/2016",
@@ -298,18 +320,21 @@ function build(language) {
         }],
         // PUBLICATIONS DATA
         publications: [{
+            relevant: true,
             title: `Generalized Disparate Impact for Configurable Fairness Solutions in ML`,
             authors: `<u>L. Giuliani</u>, E. Misino, M. Lombardi`,
             publisher: `ICML, 2023 (A* Conference)`,
             link: `https://proceedings.mlr.press/v202/giuliani23a.html`,
             abstract: `We make two contributions in the field of AI fairness over continuous protected attributes. First, we show that the Hirschfeld-Gebelein-Renyi (HGR) indicator (the only one currently available for such a case) is valuable but subject to a few crucial limitations regarding semantics, interpretability, and robustness. Second, we introduce a family of indicators that are: 1) complementary to HGR in terms of semantics; 2) fully interpretable and transparent; 3) robust over finite samples; 4) configurable to suit specific applications. Our approach also allows us to define fine-grained constraints to permit certain types of dependence and forbid others selectively. By expanding the available options for continuous protected attributes, our approach represents a significant contribution to the area of fair artificial intelligence.`
         }, {
+            relevant: true,
             title: `Towards Symbiotic Creativity: A Methodological Approach to Compare Human and AI Robotic Dance Creations`,
             authors: `A. De Filippo, <u>L. Giuliani</u>, E. Mancini, A. Borghesi, P. Mello, M. Milano`,
             publisher: `IJCAI, 2023 (A* Conference)`,
             link: `https://www.ijcai.org/proceedings/2023/644`,
             abstract: `Artificial Intelligence (AI) has gradually attracted attention in the field of artistic creation, resulting in a debate on the evaluation of AI artistic outputs. However, there is a lack of common criteria for objective artistic evaluation both of human and AI creations. This is a frequent issue in the field of dance, where different performance metrics focus either on evaluating human or computational skills separately. This work proposes a methodological approach for the artistic evaluation of both AI and human artistic creations in the field of robotic dance. First, we define a series of common initial constraints to create robotic dance choreographies in a balanced initial setting, in collaboration with a group of human dancers and choreographer. Then, we compare both creation processes through a human audience evaluation. Finally, we investigate which choreography aspects (e.g., the music genre) have the largest impact on the evaluation, and we provide useful guidelines and future research directions for the analysis of interconnections between AI and human dance creation.`
         }, {
+            relevant: true,
             title: `Achieving Intersectional Algorithmic Fairness By Constructing A Maximal Correlation Latent Space`,
             authors: `<u>L. Giuliani</u>, M. Lombardi`,
             publisher: `${select(
@@ -318,24 +343,21 @@ function build(language) {
             )} ECAI, 2025 (A Conference)`,
             abstract: `Recent developments in algorithmic fairness started to investigate the interaction between multiple sensitive information through an intersectional perspective. We introduce a new definition of intersectional fairness based on a multivariate extension of the Generalized Disparate Impact (GeDI). Our approach leverages a neural network to transform multiple protected groups into a univariate latent space that maximizes correlation with the target, effectively capturing unfairness across all potential subgroups even with limited data samples. Empirical evaluations on several benchmarks demonstrate that our method can be effectively used as a loss regularizer during neural network training, offering stronger performance guarantees compared to existing intersectional statistical parity definitions while also allowing to manage continuous inputs and targets.`
         }, {
+            relevant: true,
             title: `MusiComb: a Sample-based Approach to Music Generation Through Constraints`,
             authors: `<u>L. Giuliani</u>, F. Ballerini, A. De Filippo, A. Borghesi`,
             publisher: `ICTAI, 2023 (B Conference)`,
             link: `https://www.computer.org/csdl/proceedings-article/ictai/2023/427300a194/1T3dgtsCtcQ`,
             abstract: `Recent developments in the field of deep learning have steered research on music generation systems towards a massive use of large end-to-end neural architectures. The capability of these systems to produce convincing outputs has been extensively proven. Nonetheless, they usually come with several drawbacks, such as a low degree of user control, a lack of global structure, and the inherent impossibility of online generation due to high computational costs. Our contribution is two-fold: first, we identify these limitations and show how they have been discussed and partially addressed in the existing literature; then, we propose a novel music generation approach aimed at overcoming such limitations, by properly combining a set of samples under user-defined constraints. We model our task as a job-shop problem, and we show that interesting results can be obtained at very low computational costs. Our framework is genre-independent as it deals with samples metadata rather then individual notes, even though additional genre-specific constraint could be introduced by users to meet their stylistic requirements.`
         }, {
+            relevant: true,
             title: `Long-Term Fairness Strategies in Ranking with Continuous Sensitive Attributes`,
             authors: `<u>L. Giuliani</u>, E. Misino, R. Calegari, M. Lombardi`,
             publisher: `AEQUITAS Workshop @ ECAI, 2024 (A Conference)`,
             link: `https://ceur-ws.org/Vol-3808/paper11.pdf`,
             abstract: `Recent advancements have made significant progress in addressing fair ranking and fairness with continuous sensitive attributes as separate challenges. However, their intersection remains underexplored, although crucial for guaranteeing a wider applicability of fairness requirements. In many real-world contexts, sensitive attributes such as age, weight, income, or degree of disability are measured on a continuous scale rather than in discrete categories. Addressing the continuous nature of these attributes is essential for ensuring effective fairness in such scenarios. This work aims to fill the gap in the existing literature by proposing a novel methodology that integrates state-of-the-art techniques to address longterm fairness in the presence of continuous protected attributes. We demonstrate the effectiveness and flexibility of our approach using real-world data.`
         }, {
-            title: `Expert-MusiComb: Injective Domain Knowledge in a Neuro-Symbolic Approach for Music Generation`,
-            authors: `L. Tribuiani, <u>L. Giuliani</u>, A. De Filippo, A. Borghesi`,
-            publisher: `CREAI Workshop @ ECAI, 2024 (A Conference)`,
-            link: `https://ceur-ws.org/Vol-3810/paper4.pdf`,
-            abstract: `The significant expansion of data-driven technologies in the past decade has highlighted the crucial role of structured data, given the more relevant and meaningful informative content that they can provide to artificial intelligence (AI) applications. Nonetheless, there are domains based on inherently unstructured data, such as the audio domain. In those cases, the possibility of relying on an automated system capable of extracting structured features from raw data could serve as a pivotal element in enhancing and strengthening the capabilities of an AI system. In this work, we propose an automated feature extractor which leverages machine and deep learning methodologies to retrieve two higher-level musical attributes from short MIDI samples, namely the harmonic content of the sample – through its chords progression – and the role that such sample could have within a multi-track composition – i.e., melody, bass, or accompaniment. We perform our tests on a dataset containing ground truth information to assess quantitative results and later integrate our models within the state-of-the-art framework for combinatorial music generation MusiComb to check for harmonic and melodic consonance on the downstream generative task.`
-        }, {
+            relevant: true,
             title: `Beyond Temporal Relationships: Causal Support in Declarative Process Modeling`,
             authors: `<u>L. Giuliani</u>, A. Zecchini`,
             publisher: `${select(
@@ -344,18 +366,28 @@ function build(language) {
             )} PMAI Workshop @ ECAI, 2025 (A Conference)`,
             abstract: `Process discovery algorithms extract knowledge about processes by analyzing temporal relationships only, often disregarding any additional data available in the log. We propose a novel approach that leverages causal discovery to detect the underlying relationships between data features and events. The acquired knowledge is then used to complement an existing declarative process model by measuring the causal support between pairs of events, potentially allowing to remove inconsistent constraints to enhance robustness and clarity of the model. We discuss the details of this approach using an example on synthetic data to show its advantages and limitations.`
         }, {
+            relevant: false,
             title: `A Geometric Framework for Fairness`,
             authors: `A. Maggio, <u>L. Giuliani</u>, R. Calegari, M. Lombardi, M. Milano`,
             publisher: `AEQUITAS Workshop @ ECAI, 2023 (A Conference)`,
             link: `https://ceur-ws.org/Vol-3523/paper9.pdf`,
             abstract: `Fairness has emerged as a critical concern in the field of machine learning impacting its application in various domains. While there have been successful attempts to tackle fairness, many existing analyses rely on sophisticated mathematical methods that may lack intuitive understanding. Drawing inspiration from successful applications in other areas of machine learning, in this study, we propose a GEOmetric Framework for Fairness – GEOFFair – that represents distributions, ML models, fairness constraints, and hypothesis spaces as vectors and sets. The geometric framework aims to provide a more intuitive and rigorous understanding of fairness in Artificial Intelligence (AI). It enables visualizing mitigation techniques as movements in the vector space and aids in constructing proofs-by-witness by quickly identifying examples or counter-examples. Furthermore, the geometric framework offers a platform for studying various fairness properties, including geometrical distances between fairness vectors, relative fairness comparisons, and the exploration of symmetries, invariances, and trade-offs between fairness metrics.`
         }, {
+            relevant: false,
+            title: `Expert-MusiComb: Injective Domain Knowledge in a Neuro-Symbolic Approach for Music Generation`,
+            authors: `L. Tribuiani, <u>L. Giuliani</u>, A. De Filippo, A. Borghesi`,
+            publisher: `CREAI Workshop @ ECAI, 2024 (A Conference)`,
+            link: `https://ceur-ws.org/Vol-3810/paper4.pdf`,
+            abstract: `The significant expansion of data-driven technologies in the past decade has highlighted the crucial role of structured data, given the more relevant and meaningful informative content that they can provide to artificial intelligence (AI) applications. Nonetheless, there are domains based on inherently unstructured data, such as the audio domain. In those cases, the possibility of relying on an automated system capable of extracting structured features from raw data could serve as a pivotal element in enhancing and strengthening the capabilities of an AI system. In this work, we propose an automated feature extractor which leverages machine and deep learning methodologies to retrieve two higher-level musical attributes from short MIDI samples, namely the harmonic content of the sample – through its chords progression – and the role that such sample could have within a multi-track composition – i.e., melody, bass, or accompaniment. We perform our tests on a dataset containing ground truth information to assess quantitative results and later integrate our models within the state-of-the-art framework for combinatorial music generation MusiComb to check for harmonic and melodic consonance on the downstream generative task.`
+        }, {
+            relevant: false,
             title: `Towards Intelligent Music Production: A Sample-based Approach`,
             authors: `<u>L. Giuliani</u>, A. De Filippo, A. Borghesi`,
             publisher: `CREAI Workshop @ AIxIA, 2023 (C Conference)`,
             link: `https://ceur-ws.org/Vol-3519/paper5.pdf`,
             abstract: `Technological advances have always played a central role in shaping the production of popular music. Over the past few years, music generation systems started to attract considerable interest within the academic community, although the proposed prototypes rarely managed to emerge and be adopted by producers in their professional workflows. We argue that a major cause of that is the inherent complexity of integrating those systems into well-established music production pipelines, especially given that most of them are designed with the intent of replacing human creativity rather than assisting it. To this end, we discuss our proposal for a novel approach for Intelligent Music Production based on samples arrangement. Such a tools could offer several potential benefits in enhancing human creativity, as they provide the opportunity to keep human artists in the creative loop as well as to reduce computational costs and hardware requirements, making music production more accessible. As a first step towards this direction, we eventually present MusiComb, a prototype for sample-based music generation. Alongside, we report how this relatively simple system has demonstrated`
         }, {
+            relevant: false,
             title: `Towards Symbiotic Creativity: A Methodological Approach to Compare Human and AI Robotic Dance Creations`,
             authors: `<u>L. Giuliani</u>, A. De Filippo, A. Borghesi, P. Mello, M. Milano`,
             publisher: `CREAI Workshop @ AIxIA, 2022 (C Conference)`,
@@ -364,6 +396,7 @@ function build(language) {
         }],
         // PROJECTS DATA
         projects: [{
+            relevant: true,
             title: `MaxCorr`,
             link: `https://github.com/giuluck/maxcorr`,
             tagline: select(
@@ -371,6 +404,7 @@ function build(language) {
                 `Un Pacchetto Python per il Calcolo di Indicatori di Correlazione Massima`
             )
         }, {
+            relevant: true,
             title: `Moving Targets`,
             link: `https://github.com/moving-targets/moving-targets`,
             tagline: select(
@@ -378,13 +412,7 @@ function build(language) {
                 `Un Pacchetto Python per il Machine Learning Vincolato basato su una Decomposizione Bi-livello`
             )
         }, {
-            title: `Causalgen`,
-            link: `https://github.com/giuluck/causalgen`,
-            tagline: select(
-                `A Python Package for Data Generation based on Causal Dependencies`,
-                `Un Pacchetto Python per la Generazione di Dati basata su Dipendenze Causali`
-            )
-        }, {
+            relevant: true,
             title: `Non-Linear Correlations`,
             link: `https://github.com/giuluck/non-linear-correlations`,
             tagline: select(
@@ -392,6 +420,7 @@ function build(language) {
                 `Esperimenti per Riprodurre tutti i Risultati mostrati nella mia Tesi di Dottorato`
             )
         }, {
+            relevant: true,
             title: `Another Genetic Circuit Transcriber`,
             link: `https://github.com/AGCT-DSL/AGCT`,
             tagline: select(
@@ -399,6 +428,15 @@ function build(language) {
                 `Un Linguaggio Dominio-Specifico basato su Kotlin per la Definizione di Reti Geniche`
             )
         }, {
+            relevant: false,
+            title: `Causalgen`,
+            link: `https://github.com/giuluck/causalgen`,
+            tagline: select(
+                `A Python Package for Data Generation based on Causal Dependencies`,
+                `Un Pacchetto Python per la Generazione di Dati basata su Dipendenze Causali`
+            )
+        }, {
+            relevant: false,
             title: `Powerplantsim`,
             link: `https://github.com/giuluck/powerplantsim`,
             tagline: select(
@@ -406,6 +444,7 @@ function build(language) {
                 `Un Simulatore di Power Plants basato su Grafi`
             )
         }, {
+            relevant: false,
             title: `Interactive Benchmark Library`,
             link: `https://github.com/giuluck/benchmark-library`,
             tagline: select(
@@ -413,6 +452,7 @@ function build(language) {
                 `Una Libreria di Benchmark sviluppata per il Progetto Europeo TUPLES`
             )
         }, {
+            relevant: false,
             title: `Epidemic Model Learning`,
             link: `https://github.com/mazzio97/EpidemicModelLearning`,
             tagline: select(
@@ -420,6 +460,7 @@ function build(language) {
                 `Un'Analisi di Dati Covid basata su Machine Learning e Programmazione Matematica`
             )
         }, {
+            relevant: false,
             title: `Deep Comedy`,
             link: `https://github.com/mazzio97/DeepComedy`,
             tagline: select(
@@ -427,6 +468,7 @@ function build(language) {
                 `Un'Architettura Neural basata su Transformer per riprodurre lo Stile della Divina Commedia`
             )
         }, {
+            relevant: false,
             title: `Gangster SQuAD`,
             link: `https://github.com/giuluck/Gangster-SQuAD`,
             tagline: select(
@@ -434,6 +476,7 @@ function build(language) {
                 `Un Sistema di Elaborazione del Linguaggio Naturale basato su BERT per il Problema di Question Answering`
             )
         }, {
+            relevant: false,
             title: `IoTrace`,
             link: `https://github.com/mazzio97/IoTrace`,
             tagline: select(
@@ -441,6 +484,7 @@ function build(language) {
                 `Un Prototipo di App per il Contact Tracing sviluppata con IOTA`
             )
         }, {
+            relevant: false,
             title: `Paku Paku`,
             link: `https://github.com/giuluck/PakuPaku`,
             tagline: select(
@@ -448,6 +492,7 @@ function build(language) {
                 `Un Pacman Uno-Contro-Uno sviluppato in C++ usando Primitive OpenGL`
             )
         }, {
+            relevant: false,
             title: `Snailysis`,
             link: `https://github.com/mazzio97/Snailysis`,
             tagline: select(
@@ -455,6 +500,7 @@ function build(language) {
                 `Un Platform Game a Livelli con uno Strano Focus sull'Analisi Matematica`
             )
         }, {
+            relevant: false,
             title: `AlmaFood`,
             link: `https://github.com/mazzio97/AlmaFood`,
             tagline: select(

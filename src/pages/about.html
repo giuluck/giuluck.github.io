@@ -1,9 +1,9 @@
 <div ng-bind-html="description" class="justified"></div>
 <ul id="skills" class="row">
-    <li ng-repeat="(title, skillset) in skills" class="skills col-lg-4">
+    <li ng-repeat="(title, skillset) in skills" class="skills col-md-6 col-xl-3">
         <div class="d-flex justify-content-between title">
             <h3>{{title}}</h3>
-            <a class="d-block d-lg-none toggler"
+            <a class="d-block d-md-none toggler"
                data-bs-toggle="collapse"
                role="button"
                href="#skills-{{$index}}"
@@ -13,7 +13,7 @@
                 <span class="bi bi-dash-lg close"></span>
             </a>
         </div>
-        <ul id="skills-{{$index}}" class="show skillset d-lg-block">
+        <ul id="skills-{{$index}}" class="show skillset d-md-block">
             <li ng-repeat="skill in skillset" class="skill">
                 <div class="d-flex align-items-center justify-content-between mb-1">
                     <div>{{skill.name}}</div>

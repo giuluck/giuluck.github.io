@@ -1,7 +1,16 @@
-<section ng-repeat="(section, info) in sections" class="py-3">
-    <div ng-if="!$first" class="d-flex section my-2">
-        <h2 class="bi bi-{{info.icon}} me-2"></h2>
-        <h2 class="text-uppercase">{{info.text}}</h2>
-    </div>
-    <div ng-include="'src/pages/' + section + '.html'" ng-class="section"></div>
-</section>
+<aside>
+    <div ng-include="'src/pages/about.html'" class="about"></div>
+</aside>
+<div class="sections">
+    <section ng-if="!$first" ng-repeat="(section, info) in sections" class="py-3">
+        <div class="d-flex section my-2">
+            <h2 class="bi bi-{{info.icon}} me-2"></h2>
+            <h2 class="text-uppercase">
+                <span ng-if="section !== 'education' && print === 'short' && language === 'en'">Relevant</span>
+                {{info.text}}
+                <span ng-if="section !== 'education' && print === 'short' && language === 'it'">Rilevanti</span>
+            </h2>
+        </div>
+        <div ng-include="'src/pages/' + section + '.html'" ng-class="section"></div>
+    </section>
+</div>

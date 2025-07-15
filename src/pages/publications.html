@@ -1,5 +1,5 @@
 <ul id="publications">
-    <li ng-repeat="paper in publications">
+    <li ng-repeat="paper in publications" ng-class="paper.relevant ? '' : 'd-short-none'">
         <div class="d-flex justify-content-between">
             <div>
                 <span class="bi bi-circle timeline"></span>

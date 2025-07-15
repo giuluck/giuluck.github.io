@@ -1,5 +1,5 @@
 <ul id="education">
-    <li ng-repeat="experience in education">
+    <li ng-repeat="experience in education" ng-class="experience.relevant ? '' : 'd-short-none'">
         <div class="d-flex justify-content-between">
             <div>
                 <span class="bi bi-circle timeline"></span>
@@ -13,9 +13,9 @@
                     <span ng-if="experience.link === undefined">{{experience.institution}}</span>
                 </strong>
                 <span ng-if="experience.mark !== undefined">— {{experience.mark}}</span>
-                <span class="d-block d-print-none small">{{experience.period}}</span>
+                <span class="d-block d-short-none d-full-none small">{{experience.period}}</span>
             </div>
-            <span class="d-none d-print-block small">{{experience.period}}</span>
+            <span class="d-none d-short-block d-full-block small">{{experience.period}}</span>
             <a class="small toggler ms-4"
                href="#education-{{$index}}"
                data-bs-toggle="collapse"
@@ -26,7 +26,7 @@
                 <span class="bi bi-dash-lg close"></span>
             </a>
         </div>
-        <div id="education-{{$index}}" class="col-lg-10 collapse description d-print-block">
+        <div id="education-{{$index}}" class="col-lg-10 collapse description d-full-block">
             <p ng-repeat="(key, detail) in experience.description">
                 <strong ng-bind-html="key"></strong>: <span ng-bind-html="detail"></span>
             </p>
