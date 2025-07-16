@@ -1,5 +1,5 @@
-<ul id="publications">
-    <li ng-repeat="paper in publications" ng-class="paper.relevant ? '' : 'd-short-none'">
+<ul>
+    <li ng-repeat="paper in publications" ng-class="{'d-short-none': paper.relevant}">
         <div class="d-flex justify-content-between">
             <div>
                 <span class="bi bi-circle timeline"></span>
@@ -20,6 +20,8 @@
                 <span class="bi bi-dash-lg close"></span>
             </a>
         </div>
-        <p id="paper-{{$index}}" class="collapse description"><strong>Abstract</strong>: {{paper.abstract}}</p>
+        <div id="paper-{{$index}}" class="collapse description">
+            <p><strong>Abstract</strong>: {{paper.abstract}}</p>
+        </div>
     </li>
 </ul>

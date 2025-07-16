@@ -1,8 +1,8 @@
-<div ng-bind-html="description" class="justified"></div>
-<ul id="skills" class="row">
-    <li ng-repeat="(title, skillset) in skills" class="skills col-md-6 col-xl-3">
-        <div class="d-flex justify-content-between title">
-            <h3>{{title}}</h3>
+<div ng-bind-html="description" class="justified description mt-1 mb-2"></div>
+<ul class="row">
+    <li ng-repeat="(title, skillset) in skills" class="col-md-6 col-xl-3 py-3">
+        <div class="d-flex justify-content-between">
+            <span class="skills-title">{{title}}</span>
             <a class="d-block d-md-none toggler"
                data-bs-toggle="collapse"
                role="button"
@@ -13,14 +13,14 @@
                 <span class="bi bi-dash-lg close"></span>
             </a>
         </div>
-        <ul id="skills-{{$index}}" class="show skillset d-md-block">
-            <li ng-repeat="skill in skillset" class="skill">
+        <ul id="skills-{{$index}}" class="show d-md-grid">
+            <li ng-repeat="skill in skillset" class="mt-1">
                 <div class="d-flex align-items-center justify-content-between mb-1">
                     <div>{{skill.name}}</div>
-                    <span class="comment">{{skill.comment}}</span>
+                    <span class="comment pe-2">{{skill.comment}}</span>
                 </div>
-                <div class="bar bar-outer">
-                    <div class="bar bar-inner"
+                <div class="bar-outer">
+                    <div class="bar-inner"
                          data-level="{{skill.value}}%"
                          ng-style="{'width': skill.value + '%'}">
                     </div>

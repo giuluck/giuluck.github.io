@@ -1,5 +1,5 @@
-<ul id="projects">
-    <li ng-repeat="project in projects" ng-class="project.relevant ? '' : 'd-short-none'">
+<ul>
+    <li ng-repeat="project in projects" ng-class="{'d-short-none': project.relevant}">
         <span class="bi bi-circle timeline"></span>
         <strong><a class="d-block" href="{{project.link}}" target="_blank">{{project.title}}</a></strong>
         <span class="d-block small">{{project.tagline}}</span>
