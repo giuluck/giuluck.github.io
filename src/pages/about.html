@@ -1,5 +1,5 @@
 <div id="#biography" ng-bind-html="biography" class="d-grid gap-1 justified"></div>
-<ul id="skills" class="d-grid gap-3 mt-3 mb-2 m-short-0">
+<ul id="skills" class="d-grid gap-3 gap-short-2 mt-3 mb-2 m-short-0">
     <li ng-repeat="(title, skillset) in skills">
         <div class="d-flex justify-content-between">
             <span class="skills-title">{{title}}</span>
@@ -14,7 +14,7 @@
             </a>
         </div>
         <ul id="skills-{{$index}}" class="skillset show d-md-grid">
-            <li ng-repeat="skill in skillset" class="mt-1">
+            <li ng-repeat="skill in skillset" class="mt-1 mt-short-half">
                 <div class="skill-name d-flex align-items-center justify-content-between mb-1">
                     <div>{{skill.name}}</div>
                     <span class="comment pe-2">{{skill.comment}}</span>

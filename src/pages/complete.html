@@ -1,6 +1,6 @@
 <section class="about" ng-include="'src/pages/about.html'"></section>
 <section ng-if="section !== 'about'" ng-repeat="(section, info) in sections" ng-class="section" class="mt-4 mt-short-0">
-    <h2 class="section-title text-uppercase mb-3 mb-short-1">
+    <h2 class="text-uppercase mb-3 mb-short-1">
         <span ng-if="section !== 'education' && print === 'short' && language === 'en'">Relevant</span>
         {{info.text}}
         <span ng-if="section !== 'education' && print === 'short' && language === 'it'">Rilevanti</span>

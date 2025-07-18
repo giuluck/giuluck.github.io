@@ -120,7 +120,7 @@
         --about-skills-columns: 4;
     }
 
-    @media print, screen and (width: 796px) {
+    @media print {
         --body-background: var(--lighter);
 
         --photo-size: 180px;
