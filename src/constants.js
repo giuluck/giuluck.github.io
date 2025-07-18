@@ -41,7 +41,7 @@ function build(language) {
             html: select("He/Him", "Lui"),
         }, {
             icon: "calendar-event-fill",
-            html: select(`${age} Years Old`, `${age} Anni`),
+            html: select(`${age} Years`, `${age} Anni`),
         }, {
             icon: "geo-alt-fill",
             html: select("Bologna, Italy (IT)", "Bologna (BO), 40129"),
@@ -49,20 +49,20 @@ function build(language) {
             icon: "globe2",
             html: `<a href="https://giuluck.github.io/#/about?lang=${language}" target="_blank">giuluck.github.io</a>`
         }, {
+            icon: "github",
+            html: `<a href="https://github.com/giuluck" target="_blank">giuluck</a>`
+        }, {
+            icon: "linkedin",
+            html: `<a href="https://linkedin.com/in/luca-giuliani11" target="_blank">luca-giuliani11</a>`
+        }, {
             icon: "telephone-fill",
             html: `<a href="tel:(+39) 338 2037596" target="_blank">(+39) 338 2037596</a>`
         }, {
             icon: "envelope-open-fill",
             html: `<a href="mailto:giuluck9@gmail.com" target="_blank">giuluck9@gmail.com</a>`
-        }, {
-            icon: "linkedin",
-            html: `<a href="https://linkedin.com/in/luca-giuliani11" target="_blank">luca-giuliani11</a>`
-        }, {
-            icon: "github",
-            html: `<a href="https://github.com/giuluck" target="_blank">giuluck</a>`
         }],
-        // DESCRIPTION DATA
-        description: select(
+        // BIOGRAPHY DATA
+        biography: select(
             `<p>I am a <a href="https://www.unibo.it/sitoweb/luca.giuliani13/en" target="_blank"><strong>post-doc researcher</strong></a> at the Computer Science and Engineering Department of the University of Bologna.</p>
             <p>I mainly work on <strong>Constrained Machine Learning</strong> applied to <strong>Algorithmic Fairness</strong>, with a PhD dissertation titled “<a href="https://github.com/giuluck/non-linear-correlations/blob/main/dissertation.pdf" target="_blank">Detection and Enforcement of Non-Linear Correlations for Fair and Robust Machine Learning Applications</a>”, but I also explored other areas of Artificial Intelligence, such as music generation models and decision-focused learning for combinatorial optimization problems.</p>`,
             `<p>Sono un <a href="https://www.unibo.it/sitoweb/luca.giuliani13" target="_blank"><strong>ricercatore post-doc</strong></a> presso il Dipartimento di Informatica dell’Università di Bologna.</p>

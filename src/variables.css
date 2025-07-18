@@ -3,136 +3,150 @@
 
 /** Variables **/
 :root {
-    --DARKER: #090909;
-    --DARK: #1F3A5F;
-    --MEDIUM: #4B86B4;
-    --LIGHT: #D9E4F2;
-    --LIGHTER: #F3F3F6;
+    --darker: #090909;
+    --dark: #1F3A5F;
+    --medium: #4B86B4;
+    --light: #D9E4F2;
+    --lighter: #F3F3F6;
 
     --font-size: 16px;
-    --body-color: var(--DARKER);
-    --body-background: var(--LIGHTER);
-    --scrollbar-color: var(--DARKER);
-    --link-hover-color: var(--MEDIUM);
-
-    --curriculum-margin: 0px;
-    --curriculum-width: 1200px;
-    --curriculum-margin-top: var(--curriculum-margin);
-    --curriculum-margin-side: max(var(--curriculum-margin), calc((100vw - var(--curriculum-width)) / 2));
-    --curriculum-border-radius: 0px;
+    --icon-margin: 10px;
+    --border-radius: 0px;
+    --link-color: var(--medium);
+    --body-color: var(--darker);
+    --body-background: var(--lighter);
 
     --toggler-margin: 5px;
-    --language-top: calc(var(--curriculum-margin-top) + var(--toggler-margin));
-    --language-right: calc(7px + var(--curriculum-margin-side) + var(--toggler-margin));
-    --print-top: calc(2px + var(--curriculum-margin-top) + var(--toggler-margin));
-    --print-right: calc(50px + var(--curriculum-margin-side) + var(--toggler-margin));
-    --print-color: var(--LIGHT);
+    --print-color: var(--light);
 
-    --header-background: var(--LIGHT);
-    --header-border-radius: var(--curriculum-border-radius);
+    --curriculum-width: 1200px;
+    --curriculum-margin-top: 0px;
+    --curriculum-margin-side: 0px;
+
     --header-box-shadow: none;
     --header-gap-left: 0px;
 
-    --photo-margin: 20px;
-    --photo-left: calc(50vw - var(--photo-size) / 2);
-    --photo-border-color: var(--LIGHT);
-    --photo-border-size: 5px;
     --photo-size: 180px;
-    --photo-block: calc(2 * var(--photo-margin) + var(--photo-size));
-    --photo-box-shadow: 0 1px 1px var(--photo-border-color);
+    --photo-margin: 20px;
+    --photo-border-size: 5px;
+    --photo-border-color: var(--light);
+    --photo-left: calc(50vw - var(--photo-size) / 2);
     --photo-top: calc(var(--title-height) - var(--photo-size) / 2);
 
-    --title-background: var(--DARK);
-    --title-color: var(--LIGHTER);
     --title-text-align: center;
-    --title-height: calc(var(--title-size) + var(--title-padding-top) + var(--title-padding-bottom));
-    --title-padding-left: calc(var(--header-gap-left) + var(--title-gap-left));
-    --title-padding-top: 30px;
-    --title-padding-bottom: calc(20px + var(--photo-size) / 2);
-    --title-margin-top: 0px;
     --title-gap-left: 0px;
-    --title-size: 80px;
+    --title-margin-top: 0px;
+    --title-height: calc(130px + var(--photo-size) / 2);
+    --title-padding-bottom: calc(var(--photo-size) / 2 - 10px);
 
-    --info-min-height: calc(var(--photo-block) / 2);
-    --info-padding-left: var(--header-gap-left);
+    --info-min-height: calc(var(--photo-margin) + var(--photo-size) / 2);
+    --info-padding-right: 0px;
+    --info-padding-left: 0px;
+    --info-columns: 0;
 
-    --nav-current-color: var(--MEDIUM);
     --nav-icon-multiplier: 1.3;
 
-    --footer-content-align: end;
-    --footer-border-top: 1px solid var(--LIGHT);
-    --footer-font-size: 10px;
-    --footer-padding: calc(var(--main-padding-x) - 5px);
     --footer-height: 30px;
+    --footer-bottom: calc(var(--main-padding-x) - 5px);
 
-    --main-background: var(--LIGHTER);
-    --main-border: none;
-    --main-border-top: 1px solid var(--LIGHT);
-    --main-border-radius: var(--curriculum-border-radius);
-    --main-margin-bottom: calc(var(--curriculum-margin-top) + var(--footer-height));
+    --main-background: var(--lighter);
     --main-padding-x: 30px;
-    --main-padding-y: 20px;
+    --main-border: none;
+    --main-border-top: 1px solid var(--light);
 
-    --sections-list-gap: 10px;
     --sections-list-border-size: 1px;
     --sections-list-margin-left: 5px;
-    --sections-list-icon-color: var(--DARK);
-    --sections-list-strong-color: var(--DARKER);
-    --sections-item-font-size: calc(1.1 * var(--font-size));
+    --sections-list-icon-color: var(--dark);
     --sections-item-margin-left: calc(var(--main-padding-x) + var(--sections-list-margin-left) - 5px);
-    --sections-timeline-margin-left: calc(0px - var(--sections-list-border-size) - var(--sections-item-margin-left) - var(--sections-item-font-size) / 2);
-    --sections-description-strong-color: var(--DARK);
-    --sections-description-border-left: 2px solid var(--LIGHT);
-    --sections-description-padding-left: 10px;
-    --sections-description-margin-x: 1px;
-    --sections-description-margin-y: 4px;
-    --publications-underline-color: var(--MEDIUM);
-    --about-paragraphs-gap: 5px;
-    --about-bar-heigh: 8px;
-    --about-bar-color: var(--DARK);
-    --about-bar-background: var(--LIGHT);
-    --about-strong-color: var(--DARK);
+    --sections-description-margin: 1px;
+
+    --about-skills-columns: 1;
+    --about-bar-height: 8px;
+
+    @media (min-width: 576px) {
+        --info-columns: 1;
+    }
 
     @media (min-width: 768px) {
-        --header-gap-left: var(--photo-block);
+        --header-gap-left: calc(2 * var(--photo-margin) + var(--photo-size));
 
         --photo-size: 240px;
-        --photo-left: calc(20px + var(--curriculum-margin-side));
+        --photo-left: calc(var(--photo-margin) + var(--curriculum-margin-side));
 
         --title-text-align: left;
-        --title-padding-top: 40px;
-        --title-padding-bottom: 40px;
+        --title-padding-bottom: 0px;
+        --title-height: 160px;
 
         --info-min-height: 0px;
+        --info-padding-right: calc(var(--title-gap-left) + var(--photo-margin));
+        --info-padding-left: calc(var(--title-gap-left) + var(--header-gap-left) - var(--icon-margin));
+
+        --about-skills-columns: 2;
     }
 
     @media (min-width: 992px) {
+        --info-columns: 2;
+
         --nav-icon-multiplier: 1.2;
     }
 
     @media (min-width: 1200px) {
-        --curriculum-margin: 30px;
-        --curriculum-border-radius: 5px;
-
+        --border-radius: 5px;
         --body-background: #FCFCFC;
 
-        --print-color: var(--DARK);
+        --curriculum-margin-top: 30px;
+        --curriculum-margin-side: max(var(--curriculum-margin-top), calc((100vw - var(--curriculum-width)) / 2));
 
-        --header-box-shadow: 0 1px 2px var(--DARK);
+        --print-color: var(--dark);
+
+        --header-box-shadow: 0 1px 2px var(--dark);
 
         --photo-margin: 15px;
         --photo-border-size: 8px;
         --photo-top: calc(var(--photo-margin) + var(--curriculum-margin-top));
 
-        --title-padding-top: 25px;
-        --title-padding-bottom: 25px;
         --title-margin-top: calc(var(--photo-margin) + var(--photo-size) / 2 - var(--title-height) / 2);
         --title-gap-left: 80px;
+        --title-height: 130px;
 
-        --footer-padding: calc(5px + var(--curriculum-margin-side));
+        --info-columns: 3;
+
         --footer-height: 50px;
+        --footer-bottom: calc(5px + var(--curriculum-margin-side));
 
-        --main-border: 1px solid var(--DARK);
+        --main-border: 1px solid var(--dark);
         --main-border-top: var(--main-border);
+
+        --about-skills-columns: 4;
+    }
+
+    @media print, screen and (width: 796px) {
+        --body-background: var(--lighter);
+
+        --photo-size: 180px;
+        --photo-border-size: 5px;
+        --photo-top: calc(var(--photo-margin) + var(--curriculum-margin-top));
+
+        --info-columns: 3;
+
+        .print-full {
+            --font-size: 14px;
+            --title-height: 110px;
+            --info-min-height: calc(var(--title-height) - var(--photo-border-size));
+            --sections-list-margin-left: 5px;
+            --sections-item-margin-left: 15px;
+            --about-skills-columns: 4;
+        }
+
+        .print-short {
+            --font-size: 12px;
+            --title-height: 90px;
+            --title-margin-top: calc(var(--photo-margin) + var(--photo-size) / 2 - var(--title-height) / 2);
+            --footer-height: 60px;
+            --sections-list-margin-left: 10px;
+            --sections-item-margin-left: 10px;
+            --about-skills-columns: 1;
+            --about-bar-height: 5px;
+        }
     }
 }

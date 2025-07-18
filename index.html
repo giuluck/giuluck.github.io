@@ -25,20 +25,22 @@
 <body>
 <button id="print" ng-if="page === 'complete'" ng-click="switchPrint()">{{printToggle}}</button>
 <img id="language" ng-click="switchLanguage()" ng-src="res/{{languageToggle}}.png" alt="Language Flag Switch">
-<div id="curriculum" ng-class="'print-' + print">
+<div id="curriculum" ng-class="page === 'complete'? 'print-' + print : ''">
     <header>
         <img id="photo" src="res/profile.jpg" alt="Profile Picture"/>
-        <div class="d-flex flex-column justify-content-center">
-            <div id="title">
+        <div class="d-flex">
+            <!-- outer div needed to have top margin in extra-large devices -->
+            <div id="title" class="d-flex flex-column justify-content-center">
                 <h1 id="name"><strong>LUCA GIULIANI, PhD</strong></h1>
                 <span id="tag">Data & Computer Scientist</span>
             </div>
         </div>
-        <div id="info" class="d-flex px-1 px-md-3 py-2 py-xl-3">
-            <div id="toggled" class="collapse d-sm-block d-full-block">
-                <ul class="row">
-                    <li ng-repeat="item in info" class="col-sm-6 col-lg-4 col-xl-3 d-flex flex-lg-row py-2"
-                        ng-class="{'flex-sm-row-reverse': $odd}">
+        <div id="info" class="d-flex py-2 py-xl-3">
+            <div id="toggled" class="collapse d-sm-block d-full-block w-100">
+                <ul class="d-grid gap-0">
+                    <li ng-repeat="item in info"
+                        ng-class="{'flex-sm-row-reverse': $odd && page !== 'complete'}"
+                        class="d-flex flex-lg-row align-items-center px-0 py-2 py-short-0">
                         <span class="bi bi-{{item.icon}}"></span>
                         <span ng-bind-html="item.html" class="info-item"></span>
                     </li>

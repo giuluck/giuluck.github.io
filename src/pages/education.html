@@ -1,5 +1,5 @@
-<ul>
-    <li ng-repeat="experience in education" ng-class="{'d-short-none': experience.relevant}">
+<ul class="section-list d-short-grid gap-short-half">
+    <li ng-repeat="experience in education" ng-class="{'d-short-none': !experience.relevant}">
         <div class="d-flex justify-content-between">
             <div>
                 <span class="bi bi-circle timeline"></span>
