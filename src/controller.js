@@ -18,7 +18,7 @@ angular.module("module", ["ngRoute", "ngSanitize"])
         update($scope)
 
         // handle print style
-        const print = $location.search().print === "full" ? ["full", "short"] : ["short", "full"]
+        const print = $location.search().print === "short" ? ["short", "full"] : ["full", "short"]
         $scope.print = print[0]
         $scope.printToggle = print[1]
 

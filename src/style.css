@@ -469,42 +469,42 @@ main {
     display: inline;
 }
 
-.print-full .d-full-none, .print-short .d-short-none {
-    display: none;
+@media print {
+    .print-full .d-full-none, .print-short .d-short-none {
+        display: none;
+    }
+
+    .print-full .d-full-block, .print-short .d-short-block {
+        display: block;
+    }
+
+    .print-short .m-short-0 {
+        margin: 0 !important;
+    }
+
+    .print-short .mt-short-0 {
+        margin-top: 0 !important;
+    }
+
+    .print-short .mt-short-half {
+        margin-top: 2px !important;
+    }
+
+    .print-short .mb-short-1 {
+        margin-bottom: 4px !important;
+    }
+
+    .print-short .py-short-0 {
+        padding-top: 0 !important;
+        padding-bottom: 0 !important;
+    }
+
+    .print-short .gap-short-half {
+        gap: 2px !important;
+    }
+
+    .print-short .gap-short-2 {
+        gap: 8px !important;
+    }
 }
 
-.print-full .d-full-block, .print-short .d-short-block {
-    display: block;
-}
-
-.print-full .d-full-grid, .print-short .d-short-grid {
-    display: grid;
-}
-
-.print-short .m-short-0 {
-    margin: 0 !important;
-}
-
-.print-short .mt-short-0 {
-    margin-top: 0 !important;
-}
-
-.print-short .mt-short-half {
-    margin-top: 2px !important;
-}
-
-.print-short .mb-short-1 {
-    margin-bottom: 4px !important;
-}
-
-.print-short .py-short-0 {
-    padding-top: 0 !important;
-    padding-bottom: 0 !important;
-}
-
-.print-short .gap-short-half {
-    gap: 2px !important;
-}
-.print-short .gap-short-2 {
-    gap: 8px !important;
-}
