@@ -8,6 +8,10 @@ html, body {
     scrollbar-color: var(--darker) rgba(255, 255, 255, 0.6);
 }
 
+*:focus {
+    outline-color: var(--medium);
+}
+
 ul {
     margin: 0;
     padding: 0;
@@ -237,9 +241,9 @@ main {
 }
 
 .publications {
-    u {
+    em {
+        font-style: normal;
         color: var(--medium);
-        text-decoration: none;
     }
 
     .description {
