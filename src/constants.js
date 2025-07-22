@@ -191,7 +191,6 @@ function build(language) {
                     <li><a href="https://fondazione-fair.it/en/project/" target="_blank">FAIR</a>: Future Artificial Intelligence Research (Italian NRRP — Correlated).</li>
                 </ul>`
             }, {
-                relevant: true,
                 Istituzione: `Università di Bologna`,
                 Tesi: `“<a href="https://github.com/giuluck/non-linear-correlations/blob/main/dissertation.pdf" target="_blank">Detection and Enforcement of Non-Linear Correlations for Fair and Robust Machine Learning Applications</a>”.`,
                 "Temi di Ricerca": `<ul>
