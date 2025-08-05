@@ -343,6 +343,11 @@ main {
             margin-right: 40px;
         }
 
+        h2 {
+            page-break-after: avoid;
+            page-break-before: avoid;
+        }
+
         .section-list {
             /* quick patch to guarantee correct formatting on page breaks */
             display: block;
