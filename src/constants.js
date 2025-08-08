@@ -1,24 +1,3 @@
-function sections(select = (en, it) => undefined) {
-    return {
-        about: {
-            icon: "person-circle",
-            text: select("About Me", "Chi Sono")
-        },
-        education: {
-            icon: "mortarboard-fill",
-            text: select("Education & Work", "Formazione & Lavoro")
-        },
-        publications: {
-            icon: "file-earmark-bar-graph-fill",
-            text: select("Publications", "Pubblicazioni")
-        },
-        projects: {
-            icon: "archive-fill",
-            text: select("Projects", "Progetti")
-        }
-    }
-}
-
 function build(language) {
     const select = (en, it) => language === "it" ? it : en
 
@@ -29,6 +8,7 @@ function build(language) {
 
     return {
         // SECTIONS DATA
+        title: "Luca Giuliani",
         sections: sections(select),
         // FOOTER DATA
         footer: select(
@@ -509,19 +489,3 @@ function build(language) {
         }]
     }
 }
-
-function update($scope) {
-    // lazy initialization of language-specific data
-    const language = $scope.language
-    let entries = constants[language]
-    if (entries === undefined) {
-        entries = build(language)
-        constants[language] = entries
-    }
-    // add each entry to the scope
-    Object.entries(entries).forEach(([key, value]) => {
-        $scope[key] = value
-    })
-}
-
-const constants = {}

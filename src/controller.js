@@ -11,6 +11,8 @@ angular.module("module", ["ngRoute", "ngSanitize"])
     })
 
     .controller("controller", function ($scope, $location) {
+        $scope.constants = 'src/constants.js'
+
         // handle language choice
         const language = $location.search().lang === "it" ? ["it", "en"] : ["en", "it"]
         $scope.language = language[0]
@@ -48,3 +50,40 @@ angular.module("module", ["ngRoute", "ngSanitize"])
             $scope.page = route.$$route.originalPath.substring(1)
         })
     })
+
+function sections(select = (en, it) => undefined) {
+    return {
+        about: {
+            icon: "person-circle",
+            text: select("About Me", "Chi Sono")
+        },
+        education: {
+            icon: "mortarboard-fill",
+            text: select("Education & Work", "Formazione & Lavoro")
+        },
+        publications: {
+            icon: "file-earmark-bar-graph-fill",
+            text: select("Publications", "Pubblicazioni")
+        },
+        projects: {
+            icon: "archive-fill",
+            text: select("Projects", "Progetti")
+        }
+    }
+}
+
+function update($scope) {
+    // lazy initialization of language-specific data
+    const language = $scope.language
+    let entries = constants[language]
+    if (entries === undefined) {
+        entries = build(language)
+        constants[language] = entries
+    }
+    // add each entry to the scope
+    Object.entries(entries).forEach(([key, value]) => {
+        $scope[key] = value
+    })
+}
+
+const constants = {}
