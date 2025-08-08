@@ -22,6 +22,7 @@ h2 {
     font-size: 20px;
     font-weight: 600;
     color: var(--dark);
+    page-break-after: avoid;
 }
 
 p {
@@ -265,10 +266,6 @@ main {
 .section-list {
     border-left: var(--sections-list-border-size) solid var(--sections-list-icon-color);
     margin-left: var(--sections-list-margin-left);
-
-    h2 {
-        page-break-after: avoid;
-    }
 
     > li {
         /* use this margin/padding trick to have the border line on top of new pages */
