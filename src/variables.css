@@ -10,6 +10,7 @@
     --lighter: #F3F3F6;
 
     --font-size: 16px;
+    --page-margin: 0px;
     --icon-margin: 10px;
     --border-radius: 0px;
     --link-color: var(--medium);
@@ -54,6 +55,7 @@
     --main-border: none;
     --main-border-top: 1px solid var(--light);
 
+    --sections-list-page-margin: 0px;
     --sections-list-border-size: 1px;
     --sections-list-margin-left: 5px;
     --sections-list-icon-color: var(--dark);
@@ -62,6 +64,7 @@
 
     --about-skills-columns: 1;
     --about-bar-height: 8px;
+    --publications-margin-right: 0px;
 
     @media (min-width: 576px) {
         --info-columns: 1;
@@ -83,8 +86,6 @@
         --info-padding-right: calc(var(--title-gap-left) + var(--photo-margin));
         --info-padding-left: calc(var(--title-gap-left) + var(--header-gap-left) - var(--icon-margin));
 
-        --footer-height: 30px;
-
         --about-skills-columns: 2;
     }
 
@@ -92,6 +93,8 @@
         --info-columns: 2;
 
         --nav-icon-multiplier: 1.2;
+
+        --footer-height: 30px;
     }
 
     @media (min-width: 1200px) {
@@ -135,11 +138,14 @@
 
         .print-full {
             --font-size: 14px;
+            --page-margin: 40px;
             --title-height: 110px;
             --info-min-height: calc(var(--title-height) - var(--photo-border-size));
+            --sections-list-page-margin: 15px;
             --sections-list-margin-left: 5px;
             --sections-item-margin-left: 15px;
             --about-skills-columns: 4;
+            --publications-margin-right: 40px;
         }
 
         .print-short {

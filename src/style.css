@@ -41,6 +41,14 @@ a:hover {
     margin: 0 var(--icon-margin);
 }
 
+#header-margin {
+    height: var(--page-margin);
+}
+
+#footer-margin {
+    height: calc(var(--footer-height) + var(--sections-list-page-margin));
+}
+
 /** Curriculum & Toggler Settings **/
 
 #curriculum {
@@ -170,7 +178,8 @@ main {
     border-top: var(--main-border-top);
     border-radius: var(--border-radius);
     background: var(--main-background);
-    margin-bottom: calc(var(--curriculum-margin-top) + var(--footer-height));
+    margin-top: calc(-1 * var(--page-margin));
+    margin-bottom: var(--curriculum-margin-top);
     padding: 20px var(--main-padding-x);
 
     a:hover, a:hover * {
@@ -180,7 +189,7 @@ main {
 }
 
 .about {
-    a, strong {
+    a, strong, em {
         color: var(--dark);
     }
 
@@ -241,6 +250,8 @@ main {
 }
 
 .publications {
+    margin-right: var(--publications-margin-right);
+
     em {
         font-style: normal;
         color: var(--medium);
@@ -255,9 +266,17 @@ main {
     border-left: var(--sections-list-border-size) solid var(--sections-list-icon-color);
     margin-left: var(--sections-list-margin-left);
 
+    h2 {
+        page-break-after: avoid;
+    }
+
     > li {
-        font-size: calc(1.1 * var(--font-size));
+        /* use this margin/padding trick to have the border line on top of new pages */
+        padding-top: var(--sections-list-page-margin);
+        margin-top: calc(-1 * var(--sections-list-page-margin));
         margin-left: var(--sections-item-margin-left);
+        font-size: calc(1.1 * var(--font-size));
+        page-break-inside: avoid;
     }
 
     strong {
@@ -338,42 +357,14 @@ main {
         }
     }
 
-    .print-full {
-        .publications {
-            margin-right: 40px;
-        }
-
-        h2 {
-            page-break-after: avoid;
-            page-break-before: avoid;
-        }
-
-        .section-list {
-            /* quick patch to guarantee correct formatting on page breaks */
-            display: block;
-
-            > li {
-                page-break-inside: avoid;
-                margin-bottom: calc(5px - 30px - var(--footer-height));
-                padding-bottom: var(--footer-height);
-                padding-top: 30px;
-            }
-
-            > li:first-child {
-                padding-top: 0;
-            }
-
-            > li:last-child {
-                margin-bottom: 0;
-                padding-bottom: 0;
-            }
-        }
-    }
-
     .print-short {
         --sidebar-size: calc(2 * var(--photo-margin) + var(--photo-size));
         --sidebar-padding: 15px;
         --footer-bottom: 10px;
+
+        #footer-margin {
+            height: 0;
+        }
 
         h1 {
             font-size: 28px;
