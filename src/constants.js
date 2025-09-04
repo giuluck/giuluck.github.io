@@ -42,16 +42,108 @@ function build(language) {
             html: `<a href="mailto:giuluck9@gmail.com" target="_blank">giuluck9@gmail.com</a>`
         }],
         // BIOGRAPHY DATA
-        biography: select(
-            `<p>I am a <a href="https://www.unibo.it/sitoweb/luca.giuliani13/en" target="_blank"><strong>post-doc researcher</strong></a> at the Computer Science and Engineering Department of the University of Bologna.</p>
-            <p>I mainly work on <strong>Constrained Machine Learning</strong> applied to <strong>Algorithmic Fairness</strong>, with a PhD dissertation titled “<a href="https://github.com/giuluck/non-linear-correlations/blob/main/dissertation.pdf" target="_blank">Detection and Enforcement of Non-Linear Correlations for Fair and Robust Machine Learning Applications</a>”, but I also explored other areas of Artificial Intelligence, such as music generation models and decision-focused learning for combinatorial optimization problems.</p>`,
-            `<p>Sono un <a href="https://www.unibo.it/sitoweb/luca.giuliani13" target="_blank"><strong>ricercatore post-doc</strong></a> presso il Dipartimento di Informatica dell’Università di Bologna.</p>
-            <p>Mi occupo principalmente di <strong>Machine Learning Vincolato</strong> applicato alla <strong>Fairness Algoritmica</strong>, con una tesi di dottorato dal titolo "<a href="https://github.com/giuluck/non-linear-correlations/blob/main/dissertation.pdf" target="_blank">Detection and Enforcement of Non-Linear Correlations for Fair and Robust Machine Learning Applications</a>", ma ho esplorato anche altri ambiti dell'Intelligenza Artificiale, quali la generazione di brani musicali e il decision-focused learning per problemi di ottimizzazione.</p>`
-        ),
+        biography: select(`
+            <p>
+                I am a <a href="https://www.unibo.it/sitoweb/luca.giuliani13/en" target="_blank"><strong>post-doc
+                researcher</strong></a> at the Computer Science and Engineering Department of the University of Bologna.
+            </p>
+            <p>
+                During my PhD, I mainly worked on <strong>Constrained Machine Learning</strong> applied to Algorithmic
+                Fairness, with a PhD dissertation titled
+                “<a href="https://github.com/giuluck/non-linear-correlations/blob/main/dissertation.pdf"
+                target="_blank">Detection and Enforcement of Non-Linear Correlations for Fair and Robust Machine
+                Learning Applications</a>”, but I also explored other areas of <strong>Artificial Intelligence</strong>,
+                such as <em>Causal Discovery Algorithms</em>, <em>Declarative Business Process Mining</em>,
+                <em>Decision-Focused Learning for Combinatorial Optimization</em>, <em>Prescriptive Modelling for
+                Decision Support Systems</em>, <em>Anomaly Detection in Industrial Machines and Extreme Events</em>,
+                and <em>Music Generation via Constraint Programming</em>.
+            </p>
+            <p>
+                In over 10 years, I gained deep knowledge and competence about several <strong>procedural and
+                declarative programming languages</strong> (<i>Python</i>, <i>Kotlin</i>, <i>Java</i>, <i>C++</i>,
+                <i>C#</i>, <i>SQL</i>, <i>...</i>), <strong>good practices of software development</strong> (<i>Code
+                Documentation</i>, <i>Automated Testing</i>, <i>CI/CD Pipelines</i>, <i>Programming Patterns</i>,
+                <i>...</i>), and the <strong>most common tools for development</strong> (such as <i>Git</i>,
+                <i>Github</i>, <i>Github Actions</i>, <i>Docker</i>, <i>Docker Compose</i>, <i>...</i>), which allowed
+                me to autonomously design and the develop various <strong>open-source Python packages</strong>
+                containing algorithms that I have worked on during my research (e.g.,
+                <a href="https://github.com/giuluck/maxcorr" target="_blank">MaxCorr</a>,
+                <a href="https://github.com/moving-targets/moving-targets" target="_blank">Moving Targets</a>).
+            </p>
+            <p>
+                Besides my programming path, I acquired additional <strong>soft skills</strong> in various fields. For
+                example, thanks to my academic career, I improved my ability to <em>presents projects to an
+                audience</em> as well as <em>supervising bachelor and master students</em> both during frontal lessons
+                and during their projects/thesis work. Finally, I developed <em>communication, creative, and teamwork
+                abilities</em> thanks to my (non-professional) experience as singer/musician and radio speaker.
+            </p>
+            `, `
+            <p>
+                Sono un <a href="https://www.unibo.it/sitoweb/luca.giuliani13" target="_blank"><strong>ricercatore
+                post-doc</strong></a> presso il Dipartimento di Informatica dell’Università di Bologna.
+            </p>
+            <p>
+                Durante il mio dottorato, mi sono occupato principalmente di <strong>Machine Learning
+                Vincolato</strong> applicato alla Fairness Algoritmica, con una tesi dal titolo
+                "<a href="https://github.com/giuluck/non-linear-correlations/blob/main/dissertation.pdf"
+                target="_blank">Detection and Enforcement of Non-Linear Correlations for Fair and Robust Machine
+                Learning Applications</a>", ma ho esplorato anche altri ambiti dell'<strong>Intelligenza 
+                Artificiale</strong>, come gli <em>Algoritmi di Causal Discovery</em>, il <em>Business Process Mining
+                Dichiarativo</em>, il <em>Decision-Focused Learning per Ottimizzazione Combinatoria</em>, la
+                <em>Modellazione Prescrittiva per i Sistemi di Supporto alle Decisioni</em>, l'<em>Anomaly Detection in
+                Macchinari Industriali ed Eventi Estremi</em>, e la <em>Generazione di Brani Musicali tramite
+                Constraint Programming</em>.
+            </p>
+            <p>
+                In oltre 10 anni, ho acquisito profonde conoscenze e competenze riguardo a vari <strong>linguaggi di
+                programmazione procedurali and dichiarativi</strong> (<i>Python</i>, <i>Kotlin</i>, <i>Java</i>,
+                <i>C++</i>, <i>C#</i>, <i>SQL</i>, <i>...</i>), <strong>buone pratiche di sviluppo software</strong>
+                (<i>Documentazione del Codice</i>, <i>Testing Automatizzato</i>, <i>Pipeline CI/CD</i>, <i>Pattern di
+                Programmazione</i>, <i>...</i>), e dei <strong>più comuni tool per lo sviluppo</strong> (come
+                <i>Git</i>, <i>Github</i>, <i>Github Actions</i>, <i>Docker</i>, <i>Docker Compose</i>, <i>...</i>),
+                che mi hanno consentito di ideare e sviluppare autonomamente diversi <strong>pacchetti Python
+                open-source</strong> con gli algoritmi sui quali ho lavorato durante la mia ricerca (e.g.,
+                <a href="https://github.com/giuluck/maxcorr" target="_blank">MaxCorr</a>,
+                <a href="https://github.com/moving-targets/moving-targets" target="_blank">Moving Targets</a>).
+            </p>
+            <p>
+                Oltre al mio percorso da programmatore, ho acquisito altre <strong>soft skills</strong> in diversi
+                ambiti. Ad esempio, grazie alla mia carriera accademica, ho migliorato la mia abilità di <em>presentare
+                progetti in pubblico</em> così come <em>supervisionare studenti di triennale e magistrale</em>, sia
+                durante lezioni frontali che durante i loro progetti o le loro tesi. Infine, ho sviluppato <em>abilità
+                creative, di teamwork, e di comunicazione</em> grazie alla mia esperienza (non-professionista) come
+                cantante/musicista e speaker radiofonico.
+            </p>
+            `),
+        short_biography: select(`
+            <p>
+                I am a <a href="https://www.unibo.it/sitoweb/luca.giuliani13/en" target="_blank"><strong>post-doc
+                researcher</strong></a> at the Computer Science and Engineering Department of the University of
+                Bologna. During my PhD, I worked on <strong>Constrained Machine Learning</strong> applied to
+                Algorithmic Fairness, as well as exploring other areas of <strong>Artificial Intelligence</strong> such
+                as <em>Causal Discovery</em>, <em>Business Process Mining</em>, <em>Decision-Focused Learning for
+                Combinatorial Optimization</em>, <em>Prescriptive Modelling for Decision Support Systems</em>, and
+                others.
+            </p>
+            `, `
+            <p>
+                Sono un <a href="https://www.unibo.it/sitoweb/luca.giuliani13" target="_blank"><strong>ricercatore
+                post-doc</strong></a> presso il Dipartimento di Informatica dell’Università di Bologna. Durante il mio
+                dottorato, mi sono occupato di <strong>Machine Learning Vincolato</strong> applicato alla Fairness
+                Algoritmica, oltre ad esplorare ambiti dell'<strong>Intelligenza Artificiale</strong> come la
+                <em>Causal Discovery</em>, il <em>Business Process Mining</em>, il <em>Decision-Focused Learning per
+                Ottimizzazione Combinatoria</em>, la <em>Modellazione Prescrittiva per i Sistemi di Supporto alle
+                Decisioni</em>, e altri.
+            </p>
+        `),
         // SKILLS DATA
         skills: {
             "Hard Skills": [{
                 name: select("Programming", "Programmazione"),
+                comment: `~10 ${years}`,
+                value: 96
+            }, {
+                name: select("Software Dev.", "Sviluppo Software"),
                 comment: `~10 ${years}`,
                 value: 96
             }, {
@@ -74,6 +166,9 @@ function build(language) {
                 name: select("Creativity", "Creatività"),
                 value: 92
             }, {
+                name: select("Communication", "Comunicazione"),
+                value: 90
+            }, {
                 name: "Problem Solving",
                 value: 88
             }, {
@@ -87,11 +182,14 @@ function build(language) {
                 name: "Java / Kotlin / Scala",
                 value: 94
             }, {
+                name: "C# / C++ / C",
+                value: 90
+            }, {
                 name: "Git / Docker / GitHub Actions",
                 value: 86
             }, {
-                name: select("Web Stack", "Stack Web"),
-                value: 80,
+                name: "SQL / PL-SQL",
+                value: 84,
             }],
             [select("Languages", "Lingue")]: [{
                 name: select("Italian", "Italiano"),

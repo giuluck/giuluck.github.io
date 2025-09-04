@@ -11,8 +11,6 @@ angular.module("module", ["ngRoute", "ngSanitize"])
     })
 
     .controller("controller", function ($scope, $location) {
-        $scope.constants = 'src/constants.js'
-
         // handle language choice
         const language = $location.search().lang === "it" ? ["it", "en"] : ["en", "it"]
         $scope.language = language[0]

@@ -424,7 +424,7 @@ main {
             padding-bottom: calc(5px + var(--footer-height) + var(--footer-bottom));
             background-color: var(--light);
 
-            strong, a {
+            strong, a, em {
                 color: var(--darker)
             }
 

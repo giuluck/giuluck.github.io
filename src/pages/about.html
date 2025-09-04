@@ -1,5 +1,6 @@
-<div id="biography" ng-bind-html="biography" class="d-flex flex-column gap-1 justified"></div>
-<ul id="skills" class="d-grid gap-3 gap-short-2 mt-3 mb-2 m-short-0">
+<div ng-if="print !== 'short'" ng-bind-html="biography" class="d-flex flex-column gap-3 mb-4 justified"></div>
+<div ng-if="print === 'short'" ng-bind-html="short_biography" class="d-flex flex-column gap-3 mb-3 justified"></div>
+<ul id="skills" class="d-grid gap-3 gap-short-2 mb-2 m-short-0">
     <li ng-repeat="(title, skillset) in skills">
         <div class="d-flex justify-content-between">
             <span class="skills-title">{{title}}</span>
