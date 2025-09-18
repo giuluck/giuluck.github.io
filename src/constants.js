@@ -182,13 +182,13 @@ function build(language) {
                 name: "Java / Kotlin / Scala",
                 value: 94
             }, {
-                name: "C# / C++ / C",
+                name: "C++ / C",
                 value: 90
             }, {
                 name: "Git / Docker / GitHub Actions",
                 value: 86
             }, {
-                name: "SQL / PL-SQL",
+                name: "SQL",
                 value: 84,
             }],
             [select("Languages", "Lingue")]: [{
