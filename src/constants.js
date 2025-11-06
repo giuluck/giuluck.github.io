@@ -414,10 +414,8 @@ function build(language) {
             relevant: true,
             title: `Achieving Intersectional Algorithmic Fairness By Constructing A Maximal Correlation Latent Space`,
             authors: `<em>L. Giuliani</em>, M. Lombardi`,
-            publisher: `${select(
-                "Accepted (Not Published Yet) at",
-                "Accettato (Non Ancora Pubblicato) a"
-            )} ECAI, 2025 (A Conference)`,
+            publisher: `ECAI, 2025 (A Conference)`,
+            link: `https://ebooks.iospress.nl/doi/10.3233/FAIA251105`,
             abstract: `Recent developments in algorithmic fairness started to investigate the interaction between multiple sensitive information through an intersectional perspective. We introduce a new definition of intersectional fairness based on a multivariate extension of the Generalized Disparate Impact (GeDI). Our approach leverages a neural network to transform multiple protected groups into a univariate latent space that maximizes correlation with the target, effectively capturing unfairness across all potential subgroups even with limited data samples. Empirical evaluations on several benchmarks demonstrate that our method can be effectively used as a loss regularizer during neural network training, offering stronger performance guarantees compared to existing intersectional statistical parity definitions while also allowing to manage continuous inputs and targets.`
         }, {
             relevant: true,
@@ -437,10 +435,8 @@ function build(language) {
             relevant: true,
             title: `Beyond Temporal Relationships: Causal Support in Declarative Process Modeling`,
             authors: `<em>L. Giuliani</em>, A. Zecchini`,
-            publisher: `${select(
-                "Accepted (Not Published Yet) at",
-                "Accettato (Non Ancora Pubblicato) a"
-            )} PMAI Workshop @ ECAI, 2025 (A Conference)`,
+            publisher: `PMAI Workshop @ ECAI, 2025 (A Conference)`,
+            link: `https://ceur-ws.org/Vol-4087/paper9.pdf`,
             abstract: `Process discovery algorithms extract knowledge about processes by analyzing temporal relationships only, often disregarding any additional data available in the log. We propose a novel approach that leverages causal discovery to detect the underlying relationships between data features and events. The acquired knowledge is then used to complement an existing declarative process model by measuring the causal support between pairs of events, potentially allowing to remove inconsistent constraints to enhance robustness and clarity of the model. We discuss the details of this approach using an example on synthetic data to show its advantages and limitations.`
         }, {
             relevant: false,
