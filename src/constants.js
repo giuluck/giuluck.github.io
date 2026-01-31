@@ -44,13 +44,13 @@ function build(language) {
         // BIOGRAPHY DATA
         biography: select(`
             <p>
-                I am a <a href="https://www.unibo.it/sitoweb/luca.giuliani13/en" target="_blank"><strong>post-doc
-                researcher</strong></a> at the Computer Science and Engineering Department of the University of Bologna.
+                I am a <strong>Data Scientist</strong> and <strong>Software Developer</strong> with <strong>more than
+                ten years of experience</strong> between education and professional activity
             </p>
             <p>
-                During my PhD, I mainly worked on <strong>Constrained Machine Learning</strong> applied to Algorithmic
-                Fairness, with a PhD dissertation titled
-                “<a href="https://github.com/giuluck/non-linear-correlations/blob/main/dissertation.pdf"
+                In 2025, I obtained a <strong>PhD in Computer Science and Engineering</strong> where I worked on
+                <strong>Constrained Machine Learning</strong> applied to Algorithmic Fairness, with a PhD dissertation
+                titled “<a href="https://github.com/giuluck/non-linear-correlations/blob/main/dissertation.pdf"
                 target="_blank">Detection and Enforcement of Non-Linear Correlations for Fair and Robust Machine
                 Learning Applications</a>”, but I also explored other areas of <strong>Artificial Intelligence</strong>,
                 such as <em>Causal Discovery Algorithms</em>, <em>Declarative Business Process Mining</em>,
@@ -59,14 +59,14 @@ function build(language) {
                 and <em>Music Generation via Constraint Programming</em>.
             </p>
             <p>
-                In over 10 years, I gained deep knowledge and competence about several <strong>procedural and
-                declarative programming languages</strong> (<i>Python</i>, <i>Kotlin</i>, <i>Java</i>, <i>C++</i>,
-                <i>C#</i>, <i>SQL</i>, <i>...</i>), <strong>good practices of software development</strong> (<i>Code
-                Documentation</i>, <i>Automated Testing</i>, <i>CI/CD Pipelines</i>, <i>Programming Patterns</i>,
-                <i>...</i>), and the <strong>most common tools for development</strong> (such as <i>Git</i>,
-                <i>Github</i>, <i>Github Actions</i>, <i>Docker</i>, <i>Docker Compose</i>, <i>...</i>), which allowed
-                me to autonomously design and the develop various <strong>open-source Python packages</strong>
-                containing algorithms that I have worked on during my research (e.g.,
+                Throughout my academic and professional path, I gained deep knowledge and competence about several
+                <strong>procedural and declarative programming languages</strong> (<i>Python</i>, <i>Kotlin</i>,
+                <i>Java</i>, <i>C++</i>, <i>C#</i>, <i>SQL</i>, <i>...</i>), <strong>good practices of software
+                development</strong> (<i>Code Documentation</i>, <i>Automated Testing</i>, <i>CI/CD Pipelines</i>,
+                <i>Programming Patterns</i>, <i>...</i>), and the <strong>most common tools for development</strong>
+                (such as <i>Git</i>, <i>GitHub</i>, <i>GitHub Actions</i>, <i>Docker</i>, <i>Docker Compose</i>,
+                <i>...</i>), which allowed me to autonomously design and develop various <strong>open-source Python
+                packages</strong> containing algorithms that I have worked on during my research (e.g.,
                 <a href="https://github.com/giuluck/maxcorr" target="_blank">MaxCorr</a>,
                 <a href="https://github.com/moving-targets/moving-targets" target="_blank">Moving Targets</a>).
             </p>
@@ -79,30 +79,31 @@ function build(language) {
             </p>
             `, `
             <p>
-                Sono un <a href="https://www.unibo.it/sitoweb/luca.giuliani13" target="_blank"><strong>ricercatore
-                post-doc</strong></a> presso il Dipartimento di Informatica dell’Università di Bologna.
+                Sono un <strong>Data Scientist</strong> e <strong>Sviluppatore Informatico</strong> con <strong>oltre
+                dieci anni di esperienza</strong> fra educazione e attività professionale.
             </p>
             <p>
-                Durante il mio dottorato, mi sono occupato principalmente di <strong>Machine Learning
-                Vincolato</strong> applicato alla Fairness Algoritmica, con una tesi dal titolo
-                "<a href="https://github.com/giuluck/non-linear-correlations/blob/main/dissertation.pdf"
-                target="_blank">Detection and Enforcement of Non-Linear Correlations for Fair and Robust Machine
-                Learning Applications</a>", ma ho esplorato anche altri ambiti dell'<strong>Intelligenza 
-                Artificiale</strong>, come gli <em>Algoritmi di Causal Discovery</em>, il <em>Business Process Mining
-                Dichiarativo</em>, il <em>Decision-Focused Learning per Ottimizzazione Combinatoria</em>, la
-                <em>Modellazione Prescrittiva per i Sistemi di Supporto alle Decisioni</em>, l'<em>Anomaly Detection in
-                Macchinari Industriali ed Eventi Estremi</em>, e la <em>Generazione di Brani Musicali tramite
-                Constraint Programming</em>.
+                Nel 2025 ho conseguito un <strong>Dottorato in Ingegneria e Scienze Informatiche</strong> in cui mi
+                sono occupato principalmente di <strong>Machine Learning Vincolato</strong> applicato alla Fairness
+                Algoritmica, con una tesi dal titolo "<a target="_blank"
+                    href="https://github.com/giuluck/non-linear-correlations/blob/main/dissertation.pdf"
+                >Detection and Enforcement of Non-Linear Correlations for Fair and Robust Machine Learning
+                Applications</a>", ma ho esplorato anche altri ambiti dell'<strong>Intelligenza Artificiale</strong>,
+                come gli <em>Algoritmi di Causal Discovery</em>, il <em>Business Process Mining Dichiarativo</em>, il
+                <em>Decision-Focused Learning per Ottimizzazione Combinatoria</em>, la <em>Modellazione Prescrittiva
+                per i Sistemi di Supporto alle Decisioni</em>, l'<em>Anomaly Detection in Macchinari Industriali ed
+                Eventi Estremi</em>, e la <em>Generazione di Brani Musicali tramite Constraint Programming</em>.
             </p>
             <p>
-                In oltre 10 anni, ho acquisito profonde conoscenze e competenze riguardo a vari <strong>linguaggi di
-                programmazione procedurali and dichiarativi</strong> (<i>Python</i>, <i>Kotlin</i>, <i>Java</i>,
-                <i>C++</i>, <i>C#</i>, <i>SQL</i>, <i>...</i>), <strong>buone pratiche di sviluppo software</strong>
-                (<i>Documentazione del Codice</i>, <i>Testing Automatizzato</i>, <i>Pipeline CI/CD</i>, <i>Pattern di
-                Programmazione</i>, <i>...</i>), e dei <strong>più comuni tool per lo sviluppo</strong> (come
-                <i>Git</i>, <i>Github</i>, <i>Github Actions</i>, <i>Docker</i>, <i>Docker Compose</i>, <i>...</i>),
-                che mi hanno consentito di ideare e sviluppare autonomamente diversi <strong>pacchetti Python
-                open-source</strong> con gli algoritmi sui quali ho lavorato durante la mia ricerca (e.g.,
+                Attraverso il mio percorso accademico e professionale, ho acquisito profonde conoscenze e competenze
+                riguardo a vari <strong>linguaggi di programmazione procedurali and dichiarativi</strong>
+                (<i>Python</i>, <i>Kotlin</i>, <i>Java</i>, <i>C++</i>, <i>C#</i>, <i>SQL</i>, <i>...</i>),
+                <strong>buone pratiche di sviluppo software</strong> (<i>Documentazione del Codice</i>, <i>Testing
+                Automatizzato</i>, <i>Pipeline CI/CD</i>, <i>Pattern di Programmazione</i>, <i>...</i>), e dei
+                <strong>più comuni tool per lo sviluppo</strong> (come <i>Git</i>, <i>GitHub</i>, <i>GitHub Actions</i>,
+                <i>Docker</i>, <i>Docker Compose</i>, <i>...</i>), che mi hanno consentito di ideare e sviluppare
+                autonomamente diversi <strong>pacchetti Python open-source</strong> con gli algoritmi sui quali ho
+                lavorato durante la mia ricerca (e.g.,
                 <a href="https://github.com/giuluck/maxcorr" target="_blank">MaxCorr</a>,
                 <a href="https://github.com/moving-targets/moving-targets" target="_blank">Moving Targets</a>).
             </p>
@@ -117,23 +118,21 @@ function build(language) {
             `),
         short_biography: select(`
             <p>
-                I am a <a href="https://www.unibo.it/sitoweb/luca.giuliani13/en" target="_blank"><strong>post-doc
-                researcher</strong></a> at the Computer Science and Engineering Department of the University of
-                Bologna. During my PhD, I worked on <strong>Constrained Machine Learning</strong> applied to
-                Algorithmic Fairness, as well as exploring other areas of <strong>Artificial Intelligence</strong> such
-                as <em>Causal Discovery</em>, <em>Business Process Mining</em>, <em>Decision-Focused Learning for
-                Combinatorial Optimization</em>, <em>Prescriptive Modelling for Decision Support Systems</em>, and
-                others.
+                I am a <strong>Data Scientist</strong> and <strong>Software Developer</strong> with more than ten years
+                of experience between education and professional activity. In 2025, I obtained a <strong>PhD in
+                Computer Science and Engineering</strong> where I worked on <strong>Constrained Machine
+                Learning</strong>, as well as exploring other areas of <strong>Artificial Intelligence</strong> such
+                as <em>Causal Discovery</em>, <em>Business Process Mining</em>, <em>Combinatorial Optimization</em>,
+                and <em>Decision Support Systems</em>.
             </p>
             `, `
-            <p>
-                Sono un <a href="https://www.unibo.it/sitoweb/luca.giuliani13" target="_blank"><strong>ricercatore
-                post-doc</strong></a> presso il Dipartimento di Informatica dell’Università di Bologna. Durante il mio
-                dottorato, mi sono occupato di <strong>Machine Learning Vincolato</strong> applicato alla Fairness
-                Algoritmica, oltre ad esplorare ambiti dell'<strong>Intelligenza Artificiale</strong> come la
-                <em>Causal Discovery</em>, il <em>Business Process Mining</em>, il <em>Decision-Focused Learning per
-                Ottimizzazione Combinatoria</em>, la <em>Modellazione Prescrittiva per i Sistemi di Supporto alle
-                Decisioni</em>, e altri.
+            <p class="my-0">
+                Sono un <strong>Data Scientist</strong> e <strong>Sviluppatore Informatico</strong> con oltre dieci
+                anni di esperienza fra educazione e attività professionale. Nel 2025 ho conseguito un <strong>Dottorato
+                in Ingegneria e Scienze Informatiche</strong> in cui mi sono occupato di <strong>Machine Learning
+                Vincolato</strong>, oltre a esplorare ambiti dell'<strong>Intelligenza Artificiale</strong> come
+                <em>Causal Discovery</em>, <em>Business Process Mining</em>, <em>Ottimizzazione Combinatoria</em>,
+                e <em>Sistemi di Supporto alle Decisioni</em>.
             </p>
         `),
         // SKILLS DATA
@@ -204,63 +203,88 @@ function build(language) {
         // EDUCATION DATA
         education: [{
             relevant: true,
-            role: select("Research Fellow", "Assegnista di Ricerca"),
+            role: "Data Scientist",
             preposition: at,
-            institution: unibo,
-            link: `https://www.unibo.it/${language}`,
-            period: `11/2024 - ${select("Ongoing", "In Corso")}`,
+            institution: "Onit S.p.A.",
+            link: `https://www.onit.it/${language}`,
+            period: `01/2026 - ${select("Ongoing", "In Corso")}`,
             description: select({
-                "Funding Project": `<ul>
+                "Business Unit": "Data Warehouse & Artificial Intelligence",
+                "Activities": `<ul>
+                    <li>Exploratory Analysis on Data from Different Domains</li>
+                    <li>Development of Predictive Models and Anomaly Detection Models</li>
+                    <li>Development of Software Solutions for the Visualization and Reporting of Data Analyses</li>
+                    <li>Contact with Clients about Necessities and Results obtained from Data Analyses</li>
+                </ul>`,
+            }, {
+                "Business Unit": "Data Warehouse & Artificial Intelligence",
+                "Attività": `<ul>
+                    <li>Analisi Esplorativa su Dati di Diversi Domini</li>
+                    <li>Sviluppo di Modelli Predittivi e di Rilevamento di Anomalie</li>
+                    <li>Sviluppo di Soluzioni Software per la Visualizzazione e il Reporting delle Analisi Dati</li>
+                    <li>Contatto con Clienti riguardo alle Necessità e ai Risultati ottenuti dalle Analisi Dati</li>
+                </ul>`,
+            })
+        },
+            {
+                relevant: true,
+                role: select("Research Fellow", "Assegnista di Ricerca"),
+                preposition: at,
+                institution: unibo,
+                link: `https://www.unibo.it/${language}`,
+                period: `11/2024 - 11/2025`,
+                description: select({
+                    "Funding Project": `<ul>
                     <li><a href="https://prode.unife.it/" target="_blank">PRODE</a>: Probabilistic Declarative Process Mining (Italian RPNI).</li>
                 </ul>`,
-                "Research Topics": `<ul>
+                    "Research Topics": `<ul>
                     <li>Declarative Process Mining with Probabilistic Support.</li>
                     <li>Integration of Causal Knowledge in Declarative Process Mining.</li>
                 </ul>`
-            }, {
-                "Progetto Finanziatore": `<ul>
+                }, {
+                    "Progetto Finanziatore": `<ul>
                     <li><a href="https://prode.unife.it/" target="_blank">PRODE</a>: Probabilistic Declarative Process Mining (PRIN).</li>
                 </ul>`,
-                "Temi di Ricerca": `<ul>
+                    "Temi di Ricerca": `<ul>
                     <li>Process Mining Dichiarativo con Supporto Probabilistico.</li>
                     <li>Integrazione di Conoscenza Causale nel Process Mining Dichiarativo.</li>
                 </ul>`
-            })
-        }, {
-            relevant: true,
-            role: select("Teaching Assistant", "Tutor Didattico"),
-            preposition: at,
-            institution: unibo,
-            link: `https://www.unibo.it/${language}`,
-            period: `09/2021 - ${select("Ongoing", "In Corso")}`,
-            description: select({
-                '<a href="https://www.unibo.it/en/study/course-units-transferable-skills-moocs/course-unit-catalogue/course-unit/2024/446609" target="_blank">Artificial Intelligence in Industry</a>': `2021/22, 2022/23, 2023/24, 2024/25.`,
-                '<a href="https://www.unibo.it/en/study/course-units-transferable-skills-moocs/course-unit-catalogue/course-unit/2024/468002" target="_blank">Fundamentals of Artificial Intelligence (IT)</a>': `2024/25.`,
-                '<a href="https://www.unibo.it/en/study/course-units-transferable-skills-moocs/course-unit-catalogue/course-unit/2023/446566" target="_blank">Fundamentals of Artificial Intelligence (EN)</a>': `2022/23, 2023/24.`,
-                'Coordination and Support to Computer Science Exam Preparation': `2021/22.`
+                })
             }, {
-                '<a href="https://www.unibo.it/it/studiare/insegnamenti-competenze-trasversali-moocs/insegnamenti/insegnamento/2024/446609" target="_blank">Artificial Intelligence in Industry</a>': `2021/22, 2022/23, 2023/24, 2024/25.`,
-                '<a href="https://www.unibo.it/it/studiare/insegnamenti-competenze-trasversali-moocs/insegnamenti/insegnamento/2024/468002" target="_blank">Fondamenti di Intelligenza Artificiale</a>': `2024/25.`,
-                '<a href="https://www.unibo.it/it/studiare/insegnamenti-competenze-trasversali-moocs/insegnamenti/insegnamento/2023/446566" target="_blank">Fundamentals of Artificial Intelligence</a>': `2022/23, 2023/24.`,
-                'Coordinamento al Supporto alla Preparazione degli Esami di Ambito Informatico': `2021/22.`
-            })
-        }, {
-            relevant: true,
-            role: select("PhD", "Dottorato"),
-            preposition: "in",
-            institution: "Computer Science & Engineering",
-            link: `https://phd.unibo.it/cse/${language}`,
-            period: "11/2021 - 04/2025",
-            description: select({
-                Institution: `University of Bologna.`,
-                Thesis: `“<a href="https://github.com/giuluck/non-linear-correlations/blob/main/dissertation.pdf" target="_blank">Detection and Enforcement of Non-Linear Correlations for Fair and Robust Machine Learning Applications</a>”.`,
-                "Research Topics": `<ul>
+                relevant: true,
+                role: select("Teaching Assistant", "Tutor Didattico"),
+                preposition: at,
+                institution: unibo,
+                link: `https://www.unibo.it/${language}`,
+                period: `09/2021 - 11/2025`,
+                description: select({
+                    '<a href="https://www.unibo.it/en/study/course-units-transferable-skills-moocs/course-unit-catalogue/course-unit/2024/446609" target="_blank">Artificial Intelligence in Industry</a>': `2021/22, 2022/23, 2023/24, 2024/25.`,
+                    '<a href="https://www.unibo.it/en/study/course-units-transferable-skills-moocs/course-unit-catalogue/course-unit/2024/468002" target="_blank">Fundamentals of Artificial Intelligence (IT)</a>': `2024/25.`,
+                    '<a href="https://www.unibo.it/en/study/course-units-transferable-skills-moocs/course-unit-catalogue/course-unit/2023/446566" target="_blank">Fundamentals of Artificial Intelligence (EN)</a>': `2022/23, 2023/24.`,
+                    'Coordination and Support to Computer Science Exam Preparation': `2021/22.`
+                }, {
+                    '<a href="https://www.unibo.it/it/studiare/insegnamenti-competenze-trasversali-moocs/insegnamenti/insegnamento/2024/446609" target="_blank">Artificial Intelligence in Industry</a>': `2021/22, 2022/23, 2023/24, 2024/25.`,
+                    '<a href="https://www.unibo.it/it/studiare/insegnamenti-competenze-trasversali-moocs/insegnamenti/insegnamento/2024/468002" target="_blank">Fondamenti di Intelligenza Artificiale</a>': `2024/25.`,
+                    '<a href="https://www.unibo.it/it/studiare/insegnamenti-competenze-trasversali-moocs/insegnamenti/insegnamento/2023/446566" target="_blank">Fundamentals of Artificial Intelligence</a>': `2022/23, 2023/24.`,
+                    'Coordinamento al Supporto alla Preparazione degli Esami di Ambito Informatico': `2021/22.`
+                })
+            }, {
+                relevant: true,
+                role: select("PhD", "Dottorato"),
+                preposition: "in",
+                institution: "Computer Science & Engineering",
+                link: `https://phd.unibo.it/cse/${language}`,
+                period: "11/2021 - 04/2025",
+                description: select({
+                    Institution: `University of Bologna.`,
+                    Thesis: `“<a href="https://github.com/giuluck/non-linear-correlations/blob/main/dissertation.pdf" target="_blank">Detection and Enforcement of Non-Linear Correlations for Fair and Robust Machine Learning Applications</a>”.`,
+                    "Research Topics": `<ul>
                     <li>Algorithmic Fairness with Discrete and Continuous Sensitive Attributes.</li>
                     <li>Integrated Symbolic and Sub-symbolic Techniques for Trustworthy AI.</li>
                     <li>Decision-Focused Learning for Combinatorial Optimization Problems.</li>
                     <li>Computational Methods for Correlation Detection and Causal Discovery.</li>
                 </ul>`,
-                "Involved Projects": `<ul>
+                    "Involved Projects": `<ul>
                     <li><a href="https://tailor-network.eu/" target="_blank">TAILOR</a>: Trustworthy AI through the Integration of Learning, Optimisation and Reasoning (EU Horizon — Funding).</li>
                     <li><a href="https://www.ai4europe.eu/" target="_blank">AI4EUROPE</a>: An AI On-Demand Platform to Support Research Excellence in Europe (EU Horizon — Funding).</li>
                     <li><a href="https://www.aequitas-project.eu/" target="_blank">AEQUITAS</a>: Assessment and Engineering of Equitable, Unbiased, Impartial and Trustworthy AI Systems (EU Horizon — Correlated).</li>
@@ -268,16 +292,16 @@ function build(language) {
                     <li><a href="https://stairwai.nws.cs.unibo.it/" target="_blank">StairwAI</a>: Ease the Engagement of Low-Tech Users to the AI-on-Demand Platform through AI (EU Horizon — Correlated).</li>
                     <li><a href="https://fondazione-fair.it/en/project/" target="_blank">FAIR</a>: Future Artificial Intelligence Research (Italian NRRP — Correlated).</li>
                 </ul>`
-            }, {
-                Istituzione: `Università di Bologna`,
-                Tesi: `“<a href="https://github.com/giuluck/non-linear-correlations/blob/main/dissertation.pdf" target="_blank">Detection and Enforcement of Non-Linear Correlations for Fair and Robust Machine Learning Applications</a>”.`,
-                "Temi di Ricerca": `<ul>
+                }, {
+                    Istituzione: `Università di Bologna`,
+                    Tesi: `“<a href="https://github.com/giuluck/non-linear-correlations/blob/main/dissertation.pdf" target="_blank">Detection and Enforcement of Non-Linear Correlations for Fair and Robust Machine Learning Applications</a>”.`,
+                    "Temi di Ricerca": `<ul>
                     <li>Fairness Algoritmica con Attributi Sensibili Discreti e Continui.</li>
                     <li>Metodologie Integrate di Intelligenza Artificiale Simbolica e Sub-simbolica per la Trustworthiness.</li>
                     <li>Decision-Focused Learning per Problemi di Ottimizzazione Combinatoria.</li>
                     <li>Metodi Computazionali per la Misura di Correlazioni e per la Causal Discovery.</li>
                 </ul>`,
-                "Progetti Coinvolti": `<ul>
+                    "Progetti Coinvolti": `<ul>
                     <li><a href="https://tailor-network.eu/" target="_blank">TAILOR</a>: Trustworthy AI through the Integration of Learning, Optimisation and Reasoning (EU Horizon — Finanziatore).</li>
                     <li><a href="https://www.ai4europe.eu/" target="_blank">AI4EUROPE</a>: An AI On-Demand Platform to Support Research Excellence in Europe (EU Horizon — Finanziatore).</li>
                     <li><a href="https://www.aequitas-project.eu/" target="_blank">AEQUITAS</a>: Assessment and Engineering of Equitable, Unbiased, Impartial and Trustworthy AI Systems (EU Horizon — Correlato).</li>
@@ -285,116 +309,116 @@ function build(language) {
                     <li><a href="https://stairwai.nws.cs.unibo.it/" target="_blank">StairwAI</a>: Ease the Engagement of Low-Tech Users to the AI-on-Demand Platform through AI  (EU Horizon — Correlato).</li>
                     <li><a href="https://fondazione-fair.it/progetto/" target="_blank">FAIR</a>: Future Artificial Intelligence Research (PNRR — Correlato).</li>
                 </ul>`
-            })
-        }, {
-            relevant: true,
-            role: select("MSc", "Laurea Magistrale"),
-            preposition: "in",
-            institution: "Artificial Intelligence",
-            link: `https://corsi.unibo.it/${select("2cycle", "magistrale")}/artificial-intelligence`,
-            mark: select("110/110 with Honors", "110/110 e Lode"),
-            period: "09/2019 - 07/2021",
-            description: select({
-                Institution: `University of Bologna.`,
-                Thesis: `“<a href="https://amslaurea.unibo.it/id/eprint/23885/" target="_blank">Extending the Moving Targets Method for Injecting Constraints in Machine Learning</a>”.`,
-                Topics: `<ul>
+                })
+            }, {
+                relevant: true,
+                role: select("MSc", "Laurea Magistrale"),
+                preposition: "in",
+                institution: "Artificial Intelligence",
+                link: `https://corsi.unibo.it/${select("2cycle", "magistrale")}/artificial-intelligence`,
+                mark: select("110/110 with Honors", "110/110 e Lode"),
+                period: "09/2019 - 07/2021",
+                description: select({
+                    Institution: `University of Bologna.`,
+                    Thesis: `“<a href="https://amslaurea.unibo.it/id/eprint/23885/" target="_blank">Extending the Moving Targets Method for Injecting Constraints in Machine Learning</a>”.`,
+                    Topics: `<ul>
                     <li><i>Languages and Technologies</i>: Python, Scala, Gurobi, CPLEX, MATLAB, IOTA, Prolog, NetLogo.</li>
                     <li><i>Machine/Deep Learning Theory and Frameworks</i>: Numpy, Pandas, Scikit-Learn, Tensorflow/Keras, PyTorch/Lightning, Matplotlib, Seaborn.</li>
                     <li><i>Foundations of Artificial Intelligence</i>: Combinatorial and Mathematical Optimization, Reasoning and Logic Programming, Genetic and Evolutionary Algorithms, Search Strategies, Planning.</li>
                     <li><i>Transdisciplinary Aspects of Artificial Intelligence</i>: AI Ethics and Regulations, Algorithmic Fairness, Cognitive Neuroscience.</li>
                 </ul>`
-            }, {
-                Istituzione: `Università di Bologna`,
-                Tesi: `“<a href="https://amslaurea.unibo.it/id/eprint/23885/" target="_blank">Extending the Moving Targets Method for Injecting Constraints in Machine Learning</a>”.`,
-                Temi: `<ul>
+                }, {
+                    Istituzione: `Università di Bologna`,
+                    Tesi: `“<a href="https://amslaurea.unibo.it/id/eprint/23885/" target="_blank">Extending the Moving Targets Method for Injecting Constraints in Machine Learning</a>”.`,
+                    Temi: `<ul>
                     <li><i>Linguaggi e Tecnologie</i>: Python, Scala, Gurobi, CPLEX, MATLAB, IOTA, Prolog, NetLogo.</li>
                     <li><i>Teoria e Framework per Machine/Deep Learning</i>: Numpy, Pandas, Scikit-Learn, Tensorflow/Keras, PyTorch/Lightning, Matplotlib, Seaborn.</li>
                     <li><i>Fondamenti di Intelligenza Artificiale</i>: Ottimizzazione Combinatoria e Mathematica, Programmazione Logica e Reasoning, Algoritmi Genetici ed Evolutivi, Strategie di Ricerca, Planning.</li>
                     <li><i>Aspetti Transdisciplinari dell'Intelligenza Artificiale</i>: Etica e Diritto dell'IA, Fairness Algoritmica, Neuroscienze Cognitive.</li>
                 </ul>`
-            })
-        }, {
-            relevant: true,
-            role: select("Academic Internship", "Tirocinio Accademico"),
-            preposition: at,
-            institution: unibo,
-            link: `https://www.unibo.it/${language}`,
-            period: "02/2019 - 05/2019",
-            description: select({
-                Institution: `University of Bologna, Cesena Campus.`,
-                Project: `<ul>
+                })
+            }, {
+                relevant: false,
+                role: select("Academic Internship", "Tirocinio Accademico"),
+                preposition: at,
+                institution: unibo,
+                link: `https://www.unibo.it/${language}`,
+                period: "02/2019 - 05/2019",
+                description: select({
+                    Institution: `University of Bologna, Cesena Campus.`,
+                    Project: `<ul>
                         <li>Extension of the biochemical component of the <a href="https://github.com/AlchemistSimulator/Alchemist" target="_blank">Alchemist</a> simulator.</li>
                         <li>Development of automated tests in <i>Kotlin language</i> to guarantee the correct functioning of internal operations.</li>
                         <li>Employment of the software to <i>simulate biochemical experiments</i>.</li>
                     </ul>`
-            }, {
-                Istituzione: `Università di Bologna, Campus di Cesena.`,
-                Progetto: `<ul>
+                }, {
+                    Istituzione: `Università di Bologna, Campus di Cesena.`,
+                    Progetto: `<ul>
                         <li>Estensione della componente biochimica del simulatore <a href="https://github.com/AlchemistSimulator/Alchemist" target="_blank">Alchemist</a>.</li>
                         <li>Sviluppo di test automatizzati in <i>linguaggio Kotlin</i> per garantire il corretto funzionamento delle operazioni interne.</li>
                         <li>Utilizzo del software per <i>simulare esperimenti biochimici</i>.</li>
                     </ul>`
-            })
-        }, {
-            relevant: true,
-            role: select("BSc", "Laurea"),
-            preposition: "in",
-            institution: select("Computer Science & Engineering", "Ingegneria e Scienze Informatiche"),
-            link: `https://corsi.unibo.it/${select("1cycle/ComputerScienceEngineering", "laurea/IngegneriaScienzeInformatiche")}`,
-            mark: select("110/110 with Honors", "110/110 e Lode"),
-            period: "09/2016 - 10/2019",
-            description: select({
-                Institution: `University of Bologna, Cesena Campus.`,
-                Thesis: `“<a href="https://amslaurea.unibo.it/id/eprint/19071/" target="_blank">Design and Implementation of a Domain Specific Language for the Construction of Gene Regulatory Networks</a>”.`,
-                Topics: `<ul>
+                })
+            }, {
+                relevant: true,
+                role: select("BSc", "Laurea"),
+                preposition: "in",
+                institution: select("Computer Science & Engineering", "Ingegneria e Scienze Informatiche"),
+                link: `https://corsi.unibo.it/${select("1cycle/ComputerScienceEngineering", "laurea/IngegneriaScienzeInformatiche")}`,
+                mark: select("110/110 with Honors", "110/110 e Lode"),
+                period: "09/2016 - 10/2019",
+                description: select({
+                    Institution: `University of Bologna, Cesena Campus.`,
+                    Thesis: `“<a href="https://amslaurea.unibo.it/id/eprint/19071/" target="_blank">Design and Implementation of a Domain Specific Language for the Construction of Gene Regulatory Networks</a>”.`,
+                    Topics: `<ul>
                     <li><i>Languages and Technologies</i>: C, C++, C#, Java, Kotlin, Python, SQL/PL-SQL, Git/GitHub, LaTeX, UML, MATLAB, Javascript/jQuery, HTML, CSS, PHP, Bash, Assembly.</li>
                     <li><i>Mathematical Foundations of Computer Science</i>: Calculus, Linear Algebra, Statistics, Operations Research, Computational Methods.</li>
                     <li><i>Algorithms and Data Structures</i>: Lists, Stacks, Queues, Heaps, Trees, Graphs, Search and Sorting Algorithms, Recursive Algorithms, Complexity Theory.</li>
                 </ul>`
-            }, {
-                Istituzione: `Università di Bologna, Campus di Cesena.`,
-                Tesi: `“<a href="https://amslaurea.unibo.it/id/eprint/19071/" target="_blank">Progettazione e Implementazione di un Domain Specific Language per la Costruzione di Reti Geniche</a>”.`,
-                Temi: `<ul>
+                }, {
+                    Istituzione: `Università di Bologna, Campus di Cesena.`,
+                    Tesi: `“<a href="https://amslaurea.unibo.it/id/eprint/19071/" target="_blank">Progettazione e Implementazione di un Domain Specific Language per la Costruzione di Reti Geniche</a>”.`,
+                    Temi: `<ul>
                     <li><i>Linguaggi e Tecnologie</i>: C, C++, C#, Java, Kotlin, Python, SQL/PL-SQL, Git/GitHub, LaTeX, UML, MATLAB, Javascript/jQuery, HTML, CSS, PHP, Bash, Assembly.</li>
                     <li><i>Fondamenti Matematici delle Scienze Informatiche</i>: Analisi Matematica, Algebra Lineare, Statistica, Ricerca Operativa, Metodi Computazionali.</li>
                     <li><i>Algorithms and Data Structures</i>: Liste, Stack, Code, Heap, Alberi, Grafi, Algoritmi di Ricerca e di Ordinamento, Algoritmi Ricorsivi, Teoria della Complessità.</li>
                 </ul>`
-            })
-        }, {
-            relevant: true,
-            role: select("Professional Stage", "Stage Professionale"),
-            preposition: at,
-            institution: select("Loccioni Group", "Gruppo Loccioni"),
-            link: `https://www.loccioni.com/${language}`,
-            period: "06/2015 - 07/2015",
-            description: select({
-                Company: `Loccioni Group, Angeli di Rosora (IT).`,
-                Project: `Development of a <i>web application in AngularJS</i> for monitoring the environmental conditions of a workplace.`
+                })
             }, {
-                Azienda: `Gruppo Loccioni, Angeli di Rosora (AN)`,
-                Progetto: `Sviluppo di un'<i>applicazione web in AngularJS</i> per il controllo delle condizioni ambientali di un luogo di lavoro.`
-            })
-        }, {
-            relevant: false,
-            institution: select("Scientific High School", "Liceo Scientifico (Scienze Applicate)"),
-            mark: "100/100",
-            period: "09/2011 - 07/2016",
-            description: select({
-                School: `“Leonardo Da Vinci” High School, Jesi (IT).`,
-                Activities: `<ul>
+                relevant: true,
+                role: select("Professional Stage", "Stage Professionale"),
+                preposition: at,
+                institution: select("Loccioni Group", "Gruppo Loccioni"),
+                link: `https://www.loccioni.com/${language}`,
+                period: "06/2015 - 07/2015",
+                description: select({
+                    Company: `Loccioni Group, Angeli di Rosora (IT).`,
+                    Project: `Development of a <i>web application in AngularJS</i> for monitoring the environmental conditions of a workplace.`
+                }, {
+                    Azienda: `Gruppo Loccioni, Angeli di Rosora (AN)`,
+                    Progetto: `Sviluppo di un'<i>applicazione web in AngularJS</i> per il controllo delle condizioni ambientali di un luogo di lavoro.`
+                })
+            }, {
+                relevant: false,
+                institution: select("Scientific High School", "Liceo Scientifico (Scienze Applicate)"),
+                mark: "100/100",
+                period: "09/2011 - 07/2016",
+                description: select({
+                    School: `“Leonardo Da Vinci” High School, Jesi (IT).`,
+                    Activities: `<ul>
                     <li>Appointed <i>class representative</i> for three years.</li>
                     <li>Member of the <i>organizational committee</i> of the institute representatives for two years.</li>
                     <li>Selected for the <i>national finals of the Mathematical Games</i> (Giochi Matematici) held at the Bocconi University, and for the regional finals of many other Olympics such as: Mathematics, Computer Science, Physics, Chemistry, Philosophy, and Culture.</li>
                 </ul>`
-            }, {
-                Scuola: `Liceo Scientifico “Leonardo Da Vinci”, Jesi (AN).`,
-                Attività: `<ul>
+                }, {
+                    Scuola: `Liceo Scientifico “Leonardo Da Vinci”, Jesi (AN).`,
+                    Attività: `<ul>
                     <li>Nominato <i>rappresentante di classe</i> per tre anni.</li>
                     <li>Membro del <i>comitato organizzativo</i> della rappresentanza di istituto per due anni.</li>
                     <li>Selezionato per le <i>finali nazionali dei Giochi Matematici</i> presso l'Università Bocconi, e per le finali regionali di varie altre Olimpiadi come: Matematica, Informatica, Fisica, Chimica, Filosofia, e della Cultura.</li>
                 </ul>`
-            })
-        }],
+                })
+            }],
         // PUBLICATIONS DATA
         publications: [{
             relevant: true,
