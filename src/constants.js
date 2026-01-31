@@ -8,7 +8,7 @@ function build(language) {
 
     return {
         // SECTIONS DATA
-        title: "Curriculum Luca Giuliani - CMCC",
+        title: "Luca Giuliani",
         sections: sections(select),
         // FOOTER DATA
         footer: select(
