@@ -44,8 +44,8 @@ function build(language) {
         // BIOGRAPHY DATA
         biography: select(`
             <p>
-                I am a <strong>Data Scientist</strong> and <strong>Software Developer</strong> with <strong>more than
-                ten years of experience</strong> between education and professional activity
+                I am a <strong>Developer</strong> and <strong>Data Scientist</strong> with more than <strong>five years
+                of professional experience</strong>.
             </p>
             <p>
                 In 2025, I obtained a <strong>PhD in Computer Science and Engineering</strong> where I worked on
@@ -84,8 +84,8 @@ function build(language) {
             </p>
             `, `
             <p>
-                Sono un <strong>Data Scientist</strong> e <strong>Sviluppatore Informatico</strong> con <strong>oltre
-                dieci anni di esperienza</strong> fra educazione e attività professionale.
+                Sono uno <strong>Sviluppatore</strong> e <strong>Data Scientist</strong> con oltre <strong>cinque anni
+                di esperienza professionale</strong>.
             </p>
             <p>
                 Nel 2025 ho conseguito un <strong>Dottorato in Ingegneria e Scienze Informatiche</strong> in cui mi
