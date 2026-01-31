@@ -8,7 +8,7 @@ function build(language) {
 
     return {
         // SECTIONS DATA
-        title: "Luca Giuliani",
+        title: "Curriculum Luca Giuliani - CMCC",
         sections: sections(select),
         // FOOTER DATA
         footer: select(
@@ -65,8 +65,13 @@ function build(language) {
                 development</strong> (<i>Code Documentation</i>, <i>Automated Testing</i>, <i>CI/CD Pipelines</i>,
                 <i>Programming Patterns</i>, <i>...</i>), and the <strong>most common tools for development</strong>
                 (such as <i>Git</i>, <i>GitHub</i>, <i>GitHub Actions</i>, <i>Docker</i>, <i>Docker Compose</i>,
-                <i>...</i>), which allowed me to autonomously design and develop various <strong>open-source Python
-                packages</strong> containing algorithms that I have worked on during my research (e.g.,
+                <i>...</i>). I also have a strong familiarity with <em>JupyterLab</em> and with many other python
+                packages for data analysis, data visualization, statistical modelling, and deep learning frameworks
+                (<i>Numpy</i>, <i>Pandas</i>, <i>Seaborn</i>, <i>Scikit-Learn</i>, <i>PyTorch</i>, <i>TensorFlow</i>)
+                as well as other professional tools for numerical and constrained optimization (<i>Gurobi</i>,
+                <i>Cplex</i>, <i>Pyomo</i>, <i>OR Tools</i>, <i>Optuna</i>). The combination of both these hard skills
+                allowed me to autonomously design and develop various <strong>open-source Python packages</strong>
+                containing algorithms that I have worked on during my research (e.g.,
                 <a href="https://github.com/giuluck/maxcorr" target="_blank">MaxCorr</a>,
                 <a href="https://github.com/moving-targets/moving-targets" target="_blank">Moving Targets</a>).
             </p>
@@ -101,7 +106,12 @@ function build(language) {
                 <strong>buone pratiche di sviluppo software</strong> (<i>Documentazione del Codice</i>, <i>Testing
                 Automatizzato</i>, <i>Pipeline CI/CD</i>, <i>Pattern di Programmazione</i>, <i>...</i>), e dei
                 <strong>più comuni tool per lo sviluppo</strong> (come <i>Git</i>, <i>GitHub</i>, <i>GitHub Actions</i>,
-                <i>Docker</i>, <i>Docker Compose</i>, <i>...</i>), che mi hanno consentito di ideare e sviluppare
+                <i>Docker</i>, <i>Docker Compose</i>, <i>...</i>). Ho inoltre una forte familiarità con
+                <em>JupyterLab</em> e con molti altri pacchetti python per l'analisi dati, la visualizzazione dati, la
+                modellazione statistica, e i framework di deep learning (<i>Numpy</i>, <i>Pandas</i>, <i>Seaborn</i>,
+                <i>Scikit-Learn</i>, <i>PyTorch</i>, <i>TensorFlow</i>) così come altri tool professionali per
+                l'ottimizzazione numerica e vincolata (<i>Gurobi</i>, <i>Cplex</i>, <i>Pyomo</i>, <i>OR Tools</i>,
+                <i>Optuna</i>). La combinazione di queste due skills mi ha consentito di ideare e sviluppare
                 autonomamente diversi <strong>pacchetti Python open-source</strong> con gli algoritmi sui quali ho
                 lavorato durante la mia ricerca (e.g.,
                 <a href="https://github.com/giuluck/maxcorr" target="_blank">MaxCorr</a>,
@@ -122,8 +132,8 @@ function build(language) {
                 of experience between education and professional activity. In 2025, I obtained a <strong>PhD in
                 Computer Science and Engineering</strong> where I worked on <strong>Constrained Machine
                 Learning</strong>, as well as exploring other areas of <strong>Artificial Intelligence</strong> such
-                as <em>Causal Discovery</em>, <em>Business Process Mining</em>, <em>Combinatorial Optimization</em>,
-                and <em>Decision Support Systems</em>.
+                as <em>Causal Discovery</em>, <em>Business Process Mining</em>, <em>Numerical Optimization</em>,
+                <em>Decision Support Systems</em>, and <em>Anomaly Detection</em>.
             </p>
             `, `
             <p class="my-0">
@@ -131,8 +141,8 @@ function build(language) {
                 anni di esperienza fra educazione e attività professionale. Nel 2025 ho conseguito un <strong>Dottorato
                 in Ingegneria e Scienze Informatiche</strong> in cui mi sono occupato di <strong>Machine Learning
                 Vincolato</strong>, oltre a esplorare ambiti dell'<strong>Intelligenza Artificiale</strong> come
-                <em>Causal Discovery</em>, <em>Business Process Mining</em>, <em>Ottimizzazione Combinatoria</em>,
-                e <em>Sistemi di Supporto alle Decisioni</em>.
+                <em>Causal Discovery</em>, <em>Business Process Mining</em>, <em>Ottimizzazione Numerica</em>,
+                <em>Sistemi di Supporto alle Decisioni</em>, e <em>Anomaly Detection</em>.
             </p>
         `),
         // SKILLS DATA
