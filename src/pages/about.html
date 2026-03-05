@@ -4,12 +4,7 @@
     <li ng-repeat="(title, skillset) in skills">
         <div class="d-flex justify-content-between">
             <span class="skills-title">{{title}}</span>
-            <a class="d-block d-md-none toggler"
-               data-bs-toggle="collapse"
-               role="button"
-               href="#skills-{{$index}}"
-               aria-expanded="true"
-               aria-controls="toggled">
+            <a class="d-block d-md-none toggler" data-bs-toggle="collapse" role="button" href="#skills-{{$index}}" aria-expanded="true" aria-controls="toggled">
                 <span class="bi bi-plus-lg open"></span>
                 <span class="bi bi-dash-lg close"></span>
             </a>
@@ -21,10 +16,7 @@
                     <span class="comment pe-2">{{skill.comment}}</span>
                 </div>
                 <div class="bar-outer">
-                    <div class="bar-inner"
-                         data-level="{{skill.value}}%"
-                         ng-style="{'width': skill.value + '%'}">
-                    </div>
+                    <div class="bar-inner" data-level="{{skill.value}}%" ng-style="{'width': skill.value + '%'}"></div>
                 </div>
             </li>
         </ul>

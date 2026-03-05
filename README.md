@@ -2,9 +2,4 @@
 
 Welcome to my website.
 
-I am a **post-doc researcher** at the Computer Science and Engineering Department of the University of Bologna.
-
-I mainly work on **Constrained Machine Learning** applied to **Algorithmic Fairness**, with a PhD dissertation titled
-“Detection and Enforcement of Non-Linear Correlations for Fair and Robust Machine Learning Applications”, but I also
-explored other areas of Artificial Intelligence, such as music generation models and decision-focused learning for
-combinatorial optimization problems.
+I am a **Data Scientist** and **Software Developer** with more than ten years of experience between education and professional activity. In 2025, I obtained a **PhD in Computer Science and Engineering** where I worked on **Constrained Machine Learning**, as well as exploring other areas of **Artificial Intelligence** such as *Causal Discovery*, *Business Process Mining*, *Numerical Optimization*, *Decision Support Systems*, and *Anomaly Detection*.

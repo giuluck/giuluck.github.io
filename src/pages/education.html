@@ -6,30 +6,20 @@
                 <strong>{{experience.role}}</strong>
                 {{experience.preposition}}
                 <strong>
-                    <a ng-if="experience.link !== undefined"
-                       href="{{experience.link}}"
-                       target="_blank"
-                    >{{experience.institution}}</a>
+                    <a ng-if="experience.link !== undefined" href="{{experience.link}}" target="_blank">{{experience.institution}}</a>
                     <span ng-if="experience.link === undefined">{{experience.institution}}</span>
                 </strong>
                 <span ng-if="experience.mark !== undefined">— {{experience.mark}}</span>
                 <span class="d-block d-short-none d-full-none small">{{experience.period}}</span>
             </div>
             <span class="d-none d-short-block d-full-block small">{{experience.period}}</span>
-            <a class="small toggler ms-4"
-               href="#education-{{$index}}"
-               data-bs-toggle="collapse"
-               role="button"
-               aria-expanded="false"
-               aria-controls="toggled">
+            <a class="small toggler ms-4" href="#education-{{$index}}" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="toggled">
                 <span class="bi bi-plus-lg open"></span>
                 <span class="bi bi-dash-lg close"></span>
             </a>
         </div>
         <div id="education-{{$index}}" class="description collapse col-lg-10 d-full-block">
-            <p ng-repeat="(key, detail) in experience.description">
-                <strong ng-bind-html="key"></strong>: <span ng-bind-html="detail"></span>
-            </p>
+            <p ng-repeat="(key, detail) in experience.description"><strong ng-bind-html="key"></strong>: <span ng-bind-html="detail"></span></p>
         </div>
     </li>
 </ul>

@@ -4,10 +4,10 @@
 /** Variables **/
 :root {
     --darker: #090909;
-    --dark: #1F3A5F;
-    --medium: #4B86B4;
-    --light: #D9E4F2;
-    --lighter: #F3F3F6;
+    --dark: #1f3a5f;
+    --medium: #4b86b4;
+    --light: #d9e4f2;
+    --lighter: #f3f3f6;
 
     --font-size: 16px;
     --page-margin: 0px;
@@ -99,7 +99,7 @@
 
     @media (min-width: 1200px) {
         --border-radius: 5px;
-        --body-background: #FCFCFC;
+        --body-background: #fcfcfc;
 
         --curriculum-margin-top: 30px;
         --curriculum-margin-side: max(var(--curriculum-margin-top), calc((100vw - var(--curriculum-width)) / 2));
