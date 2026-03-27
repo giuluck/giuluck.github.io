@@ -63,7 +63,7 @@ function build(language) {
           Throughout my academic and professional path, I gained deep knowledge and competence about several <strong>procedural and declarative programming languages</strong> (<i>Python</i>, <i>Kotlin</i>, <i>Java</i>, <i>C++</i>, <i>C#</i>, <i>SQL</i>, <i>...</i>), <strong>good practices of software development</strong> (<i>Code Documentation</i>, <i>Automated Testing</i>, <i>CI/CD Pipelines</i>, <i>Programming Patterns</i>, <i>...</i>), and the <strong>most common tools for development</strong> (such as <i>Git</i>, <i>GitHub</i>, <i>GitHub Actions</i>, <i>Docker</i>, <i>Docker Compose</i>, <i>...</i>). I also have a strong familiarity with <em>JupyterLab</em> and with many other python packages for data analysis, data visualization, statistical modelling, and deep learning frameworks (<i>Numpy</i>, <i>Pandas</i>, <i>Seaborn</i>, <i>Scikit-Learn</i>, <i>PyTorch</i>, <i>TensorFlow</i>) as well as other professional tools for numerical and constrained optimization (<i>Gurobi</i>, <i>Cplex</i>, <i>Pyomo</i>, <i>OR Tools</i>, <i>Optuna</i>). The combination of both these hard skills allowed me to autonomously design and develop various <strong>open-source Python packages</strong> containing algorithms that I have worked on during my research (e.g., <a href="https://github.com/giuluck/maxcorr" target="_blank">MaxCorr</a>, <a href="https://github.com/moving-targets/moving-targets" target="_blank">Moving Targets</a>).
         </p>
         <p>
-          Besides my programming path, I acquired additional <strong>soft skills</strong> in various fields. For example, thanks to my academic career, I improved my ability to <em>presents projects to an audience</em> as well as <em>supervising bachelor and master students</em> both during frontal lessons and during their projects/thesis work. Finally, I developed <em>communication, creative, and teamwork abilities</em> thanks to my (non-professional) experience as singer/musician and radio speaker.
+          Other than programming, I acquired additional <strong>soft skills</strong> in several fields such as the ability to <em>presents projects to an audience</em>, <em>supervising bachelor and master students</em> both during frontal lessons and during their projects/thesis work, as well as <em>communication, creative, and teamwork abilities</em>.
         </p>
       `,
       `
@@ -77,7 +77,7 @@ function build(language) {
           Attraverso il mio percorso accademico e professionale, ho acquisito profonde conoscenze e competenze riguardo a vari <strong>linguaggi di programmazione procedurali and dichiarativi</strong> (<i>Python</i>, <i>Kotlin</i>, <i>Java</i>, <i>C++</i>, <i>C#</i>, <i>SQL</i>, <i>...</i>), <strong>buone pratiche di sviluppo software</strong> (<i>Documentazione del Codice</i>, <i>Testing Automatizzato</i>, <i>Pipeline CI/CD</i>, <i>Pattern di Programmazione</i>, <i>...</i>), e dei <strong>più comuni tool per lo sviluppo</strong> (come <i>Git</i>, <i>GitHub</i>, <i>GitHub Actions</i>, <i>Docker</i>, <i>Docker Compose</i>, <i>...</i>). Ho inoltre una forte familiarità con <em>JupyterLab</em> e con molti altri pacchetti python per l'analisi dati, la visualizzazione dati, la modellazione statistica, e i framework di deep learning (<i>Numpy</i>, <i>Pandas</i>, <i>Seaborn</i>, <i>Scikit-Learn</i>, <i>PyTorch</i>, <i>TensorFlow</i>) così come altri tool professionali per l'ottimizzazione numerica e vincolata (<i>Gurobi</i>, <i>Cplex</i>, <i>Pyomo</i>, <i>OR Tools</i>, <i>Optuna</i>). La combinazione di queste due skills mi ha consentito di ideare e sviluppare autonomamente diversi <strong>pacchetti Python open-source</strong> con gli algoritmi sui quali ho lavorato durante la mia ricerca (e.g., <a href="https://github.com/giuluck/maxcorr" target="_blank">MaxCorr</a>, <a href="https://github.com/moving-targets/moving-targets" target="_blank">Moving Targets</a>).
         </p>
         <p>
-          Oltre al mio percorso da programmatore, ho acquisito altre <strong>soft skills</strong> in diversi ambiti. Ad esempio, grazie alla mia carriera accademica, ho migliorato la mia abilità di <em>presentare progetti in pubblico</em> così come <em>supervisionare studenti di triennale e magistrale</em>, sia durante lezioni frontali che durante i loro progetti o le loro tesi. Infine, ho sviluppato <em>abilità creative, di teamwork, e di comunicazione</em> grazie alla mia esperienza (non-professionista) come cantante/musicista e speaker radiofonico.
+          Oltre alla programmazione, ho acquisito nel tempo diverse <strong>soft skills</strong> come l'abilità di <em>presentare progetti in pubblico</em>, <em>supervisionare studenti di triennale e magistrale</em> sia durante lezioni frontali che durante i loro progetti o le loro tesi, e infine <em>abilità creative, di teamwork, e di comunicazione</em>.
         </p>
       `,
     ),
@@ -185,7 +185,7 @@ function build(language) {
         relevant: true,
         role: "Junior Scientific Software Developer",
         preposition: at,
-        institution: `CMCC - ${("Euro-Mediterranean Center on Climate Changes", "Centro Euro-Mediterraneo sui Cambiamenti Climatici")}`,
+        institution: `CMCC - ${select("Euro-Mediterranean Center on Climate Changes", "Centro Euro-Mediterraneo sui Cambiamenti Climatici")}`,
         link: `https://cmcc.it/${select("", "it")}`,
         period: `03/2026 - ${select("Ongoing", "In Corso")}`,
         description: select(
@@ -464,7 +464,7 @@ function build(language) {
         ),
       },
       {
-        relevant: true,
+        relevant: false,
         role: select("Professional Stage", "Stage Professionale"),
         preposition: at,
         institution: select("Loccioni Group", "Gruppo Loccioni"),
