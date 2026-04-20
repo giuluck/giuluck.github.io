@@ -8,7 +8,6 @@ function build(language) {
 
   return {
     // SECTIONS DATA
-    title: "Luca Giuliani",
     sections: sections(select),
     // FOOTER DATA
     footer: select(
